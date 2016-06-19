@@ -24,10 +24,7 @@ public class UserDaoTest {
 
     @Test
     public void insertUser() throws Exception {
-        for (int i=0;i<100;i++){
-            int result = userDao.insertUser("lzx2005rrr"+i,"e10adc3949ba59abbe56e057f20f883e", (short) 0);
-            System.out.println("result="+result);
-        }
+            int result = userDao.insertUser("lzx2005","e10adc3949ba59abbe56e057f20f883e", (short) 0);
     }
 
     @Test
