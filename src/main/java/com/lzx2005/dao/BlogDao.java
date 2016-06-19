@@ -1,0 +1,17 @@
+package com.lzx2005.dao;
+
+import com.lzx2005.entity.Blog;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * Created by Administrator on 2016/6/19.
+ */
+public interface BlogDao {
+    public void insertBlog(@Param("title") String title,@Param("content") String content,@Param("blogType") short blogType);
+
+    public Blog queryById(long blogId);
+
+    public List<Blog> findAll(@Param("offset") int offset,@Param("limit") int limit);
+}

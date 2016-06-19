@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzx2005.dao.BlogDao">
+    <insert id="insertBlog">
+        INSERT INTO `blog` (title,content,blog_type)
+        VALUES (#{title},#{content},#{blog_type})
+    </insert>
+
+    <select id="queryById">
+        SELECT * FROM `blog` WHERE blog_id = #{blogId}
+    </select>
+
+    <select id="findAll">
+        SELECT * FROM `blog`
+        ORDER BY create_time DESC
+        LIMIT #{offset},#{limit}
+    </select>
+</mapper>
