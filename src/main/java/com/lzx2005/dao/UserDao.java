@@ -9,7 +9,7 @@ import java.util.List;
  * Created by Administrator on 2016/6/19.
  */
 public interface UserDao {
-    public void insertUser(@Param("username") String username,@Param("password") String password,@Param("userType") String userType);
+    public int insertUser(@Param("username") String username,@Param("password") String password,@Param("userType") short userType);
 
     public User queryById(long userId);
 

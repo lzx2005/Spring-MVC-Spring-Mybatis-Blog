@@ -17,9 +17,9 @@
         <!-- 关闭连接后不自动commit -->
         <property name="autoCommitOnClose" value="false"/>
         <!-- 获取连接超时时间 -->
-        <property name="checkoutTimeout" value="1000"/>
+        <property name="checkoutTimeout" value="5000"/>
         <!-- 连接失败尝试次数-->
-        <property name="acquireRetryAttempts" value="2"/>
+        <property name="acquireRetryAttempts" value="5"/>
     </bean>
     
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">

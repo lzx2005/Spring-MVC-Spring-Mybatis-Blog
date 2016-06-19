@@ -4,16 +4,16 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lzx2005.dao.UserDao">
     <insert id="insertUser">
-          insert into `user` (username,password,user_type)
-          values (#{username},#{password},#{userType})
+          INSERT ignore INTO `user` (username,password,user_type)
+          VALUES (#{username},#{password},#{userType})
     </insert>
 
-    <select id="queryById">
+    <select id="queryById" resultType="com.lzx2005.entity.User">
         select * from `user`
         WHERE user_id = #{userId}
     </select>
 
-    <select id="findAll">
-        SELECT * FROM `user` ORDER BY create_time DESC limit #{offset},#{limit}
+    <select id="findAll" resultType="com.lzx2005.entity.User">
+        SELECT * FROM `user` ORDER BY create_time ASC limit #{offset},#{limit}
     </select>
 </mapper>

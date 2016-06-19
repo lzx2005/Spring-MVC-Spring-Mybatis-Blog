@@ -8,11 +8,11 @@
         VALUES (#{title},#{content},#{blog_type})
     </insert>
 
-    <select id="queryById">
+    <select id="queryById" resultType="com.lzx2005.entity.Blog">
         SELECT * FROM `blog` WHERE blog_id = #{blogId}
     </select>
 
-    <select id="findAll">
+    <select id="findAll" resultType="com.lzx2005.entity.Blog">
         SELECT * FROM `blog`
         ORDER BY create_time DESC
         LIMIT #{offset},#{limit}
