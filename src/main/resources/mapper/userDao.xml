@@ -13,7 +13,15 @@
         WHERE user_id = #{userId}
     </select>
 
+    <select id="findByUsername" resultType="com.lzx2005.entity.User">
+        SELECT * FROM `user` WHERE username = #{username}
+    </select>
+
     <select id="findAll" resultType="com.lzx2005.entity.User">
         SELECT * FROM `user` ORDER BY create_time ASC limit #{offset},#{limit}
+    </select>
+
+    <select id="login" resultType="com.lzx2005.entity.User">
+        SELECT * FROM `user` WHERE username = #{username} AND password = #{password}
     </select>
 </mapper>

@@ -13,5 +13,10 @@ public interface UserDao {
 
     public User queryById(long userId);
 
+    public User findByUsername(String username);
+
     public List<User> findAll(@Param("offset") int offset,@Param("limit") int limit);
+
+    public User login(@Param("username") String username,@Param("password") String password);
+
 }

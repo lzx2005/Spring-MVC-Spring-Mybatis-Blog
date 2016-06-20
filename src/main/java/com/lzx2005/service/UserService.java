@@ -13,9 +13,10 @@ public interface UserService {
 
     public ServiceResult<List<User>> findAll(int page,int pageSize);
 
-    public ServiceResult<User> findUserById(long userId);
-
     public ServiceResult<User> login(String username,String password);
 
-    public ServiceResult<User> register(String username, String password, short userType);
+    public ServiceResult<User> findUserById(long userId);
+
+    public ServiceResult<User> findUserByUsername(String username);
+
 }
