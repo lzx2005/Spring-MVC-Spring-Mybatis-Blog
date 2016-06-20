@@ -10,9 +10,9 @@ import java.util.List;
  */
 public interface BlogService {
 
-    public ServiceResult<Blog> createBlog(String title, String content, short blogType);
+    public ServiceResult<Blog> createBlog(String title, String author, String content, short blogType);
 
-    public ServiceResult<List<Blog>> getAllBlog(int page,int pageSize);
+    public ServiceResult<List<Blog>> getAllBlog(int page, int pageSize);
 
     public ServiceResult<Blog> getBlog(long blogId);
 }

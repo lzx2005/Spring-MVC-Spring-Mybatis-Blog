@@ -9,6 +9,7 @@ public class Blog {
     private long blogId;
     private String title;
     private String content;
+    private String author;
     private Date createTime;
     private long view;
     private short blogType;
@@ -61,12 +62,21 @@ public class Blog {
         this.blogType = blogType;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
     @Override
     public String toString() {
         return "Blog{" +
                 "blogId=" + blogId +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
+                ", author='" + author + '\'' +
                 ", createTime=" + createTime +
                 ", view=" + view +
                 ", blogType=" + blogType +

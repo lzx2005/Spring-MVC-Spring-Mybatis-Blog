@@ -18,8 +18,8 @@ public class BlogServiceImpl implements BlogService {
     @Autowired
     private BlogDao blogDao;
 
-    public ServiceResult<Blog> createBlog(String title, String content, short blogType) {
-        int result = blogDao.insertBlog(title, content, blogType);
+    public ServiceResult<Blog> createBlog(String title, String author, String content, short blogType) {
+        int result = blogDao.insertBlog(title, author, content, blogType);
         ServiceResult<Blog> sr = null;
         Blog blog = null;
         if (result == 1) {

@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abb12a86-865e-49de-8196-3d52479cca9f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/exception/BlogException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/junit/com/lzx2005/service/BlogServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/BlogService.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/BlogService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/blogDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/blogDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/BlogDaoTest.java" afterPath="$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/BlogDaoTest.java" />
     </list>
     <ignored path="lzx2005.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,46 +33,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+      <file leaf-file-name="BlogServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="283">
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1190#1202#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="121" selection-start-line="11" selection-start-column="113" selection-end-line="11" selection-end-column="121" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-service.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -76,8 +49,8 @@
       <file leaf-file-name="BlogService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/service/BlogService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="378">
+              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,15 +58,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java">
+      <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/UserDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1167#1179#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="551">
+              <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,21 +83,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Blog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java">
+      <file leaf-file-name="blogDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/blogDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+            <state relative-caret-position="189">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+              <folding>
+                <marker date="1466424305535" expanded="true" signature="246:356" ph="INSERT INTO `blog`... " />
+                <marker date="1466424305535" expanded="true" signature="445:491" ph="SELECT * FRO... blog" />
+                <marker date="1466424305535" expanded="true" signature="578:665" ph="SELECT * FRO... blog" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/service/UserService.java">
+      <file leaf-file-name="BlogDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/BlogDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="405">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/junit/com/lzx2005/service/BlogServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,24 +139,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/dto/ServiceResult.java">
+      <file leaf-file-name="Blog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="1323">
+              <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
               <folding>
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#584#585#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#1202#1203#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1275#1276#0" expanded="true" />
+                <element signature="e#1311#1312#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,9 +159,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -183,8 +179,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/sql/init.sql" />
@@ -192,14 +186,17 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/userDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/UserDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/blogDao.xml" />
-        <option value="$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/BlogDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/dto/BlogServiceResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/service/BlogService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/exception/BlogException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/blogDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/BlogDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/service/BlogService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/junit/com/lzx2005/service/BlogServiceTest.java" />
       </list>
     </option>
   </component>
@@ -310,6 +307,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="junit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lzx2005" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lzx2005" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lzx2005" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="junit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lzx2005" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -636,26 +667,74 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lzx2005.service" />
       <recent name="com.lzx2005.dao" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in lzx2005">
-    <configuration default="false" name="UserDaoTest.insertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BlogServiceTest.getBlog">
+    <configuration default="false" name="All in lzx2005" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="lzx2005" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BlogServiceTest.createBlog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.lzx2005.dao.*" />
+          <option name="PATTERN" value="com.lzx2005.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="lzx2005" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lzx2005.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lzx2005.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="insertUser" />
+      <option name="PACKAGE_NAME" value="com.lzx2005.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lzx2005.service.BlogServiceTest" />
+      <option name="METHOD_NAME" value="createBlog" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BlogServiceTest.getAllBlog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.lzx2005.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="lzx2005" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lzx2005.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lzx2005.service.BlogServiceTest" />
+      <option name="METHOD_NAME" value="getAllBlog" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -695,67 +774,20 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="BlogDaoTest.queryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BlogServiceTest.getBlog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.lzx2005.dao.*" />
+          <option name="PATTERN" value="com.lzx2005.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="lzx2005" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lzx2005.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lzx2005.dao.BlogDaoTest" />
-      <option name="METHOD_NAME" value="queryById" />
+      <option name="PACKAGE_NAME" value="com.lzx2005.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lzx2005.service.BlogServiceTest" />
+      <option name="METHOD_NAME" value="getBlog" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BlogDaoTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.lzx2005.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="lzx2005" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lzx2005.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lzx2005.dao.BlogDaoTest" />
-      <option name="METHOD_NAME" value="findAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="All in lzx2005" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="lzx2005" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1231,19 +1263,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.UserDaoTest.insertUser" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BlogDaoTest.insertBlog" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BlogDaoTest.queryById" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BlogDaoTest.findAll" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in lzx2005" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in lzx2005" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BlogServiceTest.createBlog" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BlogServiceTest.getAllBlog" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BlogDaoTest.insertBlog" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BlogServiceTest.getBlog" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in lzx2005" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BlogDaoTest.findAll" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BlogDaoTest.queryById" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BlogServiceTest.getBlog" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BlogServiceTest.getAllBlog" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BlogServiceTest.createBlog" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.BlogDaoTest.insertBlog" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserDaoTest.insertUser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in lzx2005" />
       </list>
     </recent_temporary>
   </component>
@@ -1264,7 +1296,7 @@
       <updated>1466241472486</updated>
       <workItem from="1466241475056" duration="1822000" />
       <workItem from="1466315793371" duration="9285000" />
-      <workItem from="1466408625362" duration="4270000" />
+      <workItem from="1466408625362" duration="6480000" />
     </task>
     <task id="LOCAL-00001" summary="编写SQL代码，设定Mybatis属性">
       <created>1466318435156</created>
@@ -1322,7 +1354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466410891244</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完成BlogService的编写">
+      <created>1466413445568</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1466413445568</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1332,33 +1371,33 @@
     <history-entry file="BlogDaoTest_findAll - 2016.06.20 at 15h 59m 30s.xml">
       <configuration name="BlogDaoTest.findAll" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogDaoTest_queryById - 2016.06.20 at 15h 48m 23s.xml">
-      <configuration name="BlogDaoTest.queryById" configurationId="JUnit" />
+    <history-entry file="BlogServiceTest_createBlog - 2016.06.20 at 17h 23m 17s.xml">
+      <configuration name="BlogServiceTest.createBlog" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogDaoTest_queryById - 2016.06.20 at 15h 48m 48s.xml">
-      <configuration name="BlogDaoTest.queryById" configurationId="JUnit" />
+    <history-entry file="BlogServiceTest_createBlog - 2016.06.20 at 17h 23m 40s.xml">
+      <configuration name="BlogServiceTest.createBlog" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_insertUser - 2016.06.19 at 15h 38m 55s.xml">
-      <configuration name="UserDaoTest.insertUser" configurationId="JUnit" />
+    <history-entry file="BlogServiceTest_createBlog - 2016.06.20 at 17h 24m 12s.xml">
+      <configuration name="BlogServiceTest.createBlog" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_insertUser - 2016.06.19 at 15h 39m 05s.xml">
-      <configuration name="UserDaoTest.insertUser" configurationId="JUnit" />
+    <history-entry file="BlogServiceTest_createBlog - 2016.06.20 at 17h 26m 14s.xml">
+      <configuration name="BlogServiceTest.createBlog" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_insertUser - 2016.06.19 at 15h 39m 47s.xml">
-      <configuration name="UserDaoTest.insertUser" configurationId="JUnit" />
+    <history-entry file="BlogServiceTest_createBlog - 2016.06.20 at 20h 06m 24s.xml">
+      <configuration name="BlogServiceTest.createBlog" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_insertUser - 2016.06.19 at 17h 12m 17s.xml">
-      <configuration name="UserDaoTest.insertUser" configurationId="JUnit" />
+    <history-entry file="BlogServiceTest_getAllBlog - 2016.06.20 at 20h 01m 10s.xml">
+      <configuration name="BlogServiceTest.getAllBlog" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_queryById - 2016.06.19 at 15h 40m 20s.xml">
-      <configuration name="UserDaoTest.queryById" configurationId="JUnit" />
+    <history-entry file="BlogServiceTest_getAllBlog - 2016.06.20 at 20h 06m 48s.xml">
+      <configuration name="BlogServiceTest.getAllBlog" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_queryById - 2016.06.19 at 15h 40m 34s.xml">
-      <configuration name="UserDaoTest.queryById" configurationId="JUnit" />
+    <history-entry file="BlogServiceTest_getBlog - 2016.06.20 at 20h 07m 31s.xml">
+      <configuration name="BlogServiceTest.getBlog" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15377000" />
+    <option name="totallyTimeSpent" value="17587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1373,7 +1412,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1406,7 +1445,8 @@
     <MESSAGE value="编写BlogDao测试类，修复部分BUG" />
     <MESSAGE value="开始编写Service层代码" />
     <MESSAGE value="统一DTO代码，重构Service接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="统一DTO代码，重构Service接口" />
+    <MESSAGE value="完成BlogService的编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成BlogService的编写" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1475,9 +1515,9 @@
         <state relative-caret-position="189">
           <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
           <folding>
-            <marker date="1466328658798" expanded="true" signature="246:339" ph="INSERT INTO `blog`... " />
-            <marker date="1466328658798" expanded="true" signature="428:474" ph="SELECT * FRO... blog" />
-            <marker date="1466328658798" expanded="true" signature="561:648" ph="SELECT * FRO... blog" />
+            <marker date="1466424305535" expanded="true" signature="246:356" ph="INSERT INTO `blog`... " />
+            <marker date="1466424305535" expanded="true" signature="445:491" ph="SELECT * FRO... blog" />
+            <marker date="1466424305535" expanded="true" signature="578:665" ph="SELECT * FRO... blog" />
           </folding>
         </state>
       </provider>
@@ -1546,13 +1586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1596,54 +1629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2160">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/blogDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <marker date="1466328658798" expanded="true" signature="246:339" ph="INSERT INTO `blog`... " />
-            <marker date="1466328658798" expanded="true" signature="428:474" ph="SELECT * FRO... blog" />
-            <marker date="1466328658798" expanded="true" signature="561:648" ph="SELECT * FRO... blog" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/BlogDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1658,38 +1647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="121" selection-start-line="11" selection-start-column="113" selection-end-line="11" selection-end-column="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/service/BlogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1717,6 +1678,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/exception/BlogException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1730,14 +1707,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        <state relative-caret-position="459">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1167#1179#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/service/BlogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1190#1202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/blogDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <marker date="1466424305535" expanded="true" signature="246:356" ph="INSERT INTO `blog`... " />
+            <marker date="1466424305535" expanded="true" signature="445:491" ph="SELECT * FRO... blog" />
+            <marker date="1466424305535" expanded="true" signature="578:665" ph="SELECT * FRO... blog" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+          <folding>
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/BlogDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/junit/com/lzx2005/service/BlogServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -23,7 +23,7 @@ public class BlogDaoTest {
 
     @Test
     public void insertBlog() throws Exception {
-        int result = blogDao.insertBlog("测试标题","测试内容",(short)0);
+        int result = blogDao.insertBlog("测试标题","lzx2005","测试内容",(short)0);
         System.out.println(result);
     }
 
