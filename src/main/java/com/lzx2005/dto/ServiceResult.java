@@ -3,17 +3,17 @@ package com.lzx2005.dto;
 /**
  * Created by Administrator on 2016/6/20.
  */
-public class BlogServiceResult<T> {
+public class ServiceResult<T> {
     private boolean success;
     private String errorMsg;
     private T data;
 
-    public BlogServiceResult(boolean success, T data) {
+    public ServiceResult(boolean success, T data) {
         this.success = success;
         this.data = data;
     }
 
-    public BlogServiceResult(boolean success, String errorMsg) {
+    public ServiceResult(boolean success, String errorMsg) {
         this.success = success;
         this.errorMsg = errorMsg;
     }
@@ -44,7 +44,7 @@ public class BlogServiceResult<T> {
 
     @Override
     public String toString() {
-        return "BlogServiceResult{" +
+        return "ServiceResult{" +
                 "success=" + success +
                 ", errorMsg='" + errorMsg + '\'' +
                 ", data=" + data +
