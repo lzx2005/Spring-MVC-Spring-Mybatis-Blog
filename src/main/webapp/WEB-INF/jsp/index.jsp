@@ -1,11 +1,13 @@
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="layout/tag.jsp"%>
+<%@include file="layout/tag.jsp" %>
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,9 +16,9 @@
     <meta name="author" content="">
 
     <title>Welcome~</title>
-    <base href="<%=basePath %>" />
-    <%@include file="layout/css.jsp"%>
-    <%@include file="layout/script.jsp"%>
+    <base href="<%=basePath %>"/>
+    <%@include file="layout/css.jsp" %>
+    <%@include file="layout/script.jsp" %>
 </head>
 
 <body>
@@ -24,7 +26,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -50,8 +53,11 @@
 <div class="jumbotron jumb-block">
     <div class="container">
         <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">Learn more »</a></p>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a
+            jumbotron and three supporting pieces of content. Use it as a starting point to create something more
+            unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">Learn more
+            »</a></p>
     </div>
 </div>
 
@@ -62,69 +68,26 @@
         <div class="col-md-8">
 
             <div class="row">
-                <div class="col-md-12 blog-block">
-                    <h2>Heading</h2>
-                    <div class="font1">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
-                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+
+                <c:forEach begin="1" end="10">
+
+                    <div class="col-md-12 blog-block">
+                        <h2>Heading</h2>
+                        <div class="font1">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
+                            <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+                        </div>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                            mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                            magna mollis euismod. Donec sed odio dui. </p>
+                        <p>
+                            <a class="btn btn-default" href="#" role="button">View details »</a>
+                            <a class="btn btn-primary" href="#" role="button">See More</a>
+                            <a class="btn btn-danger" href="#" role="button">Delete</a>
+                        </p>
                     </div>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-12 blog-block">
-                    <h2>Heading</h2>
-                    <div class="font1">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
-                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
-                    </div>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-12 blog-block">
-                    <h2>Heading</h2>
-                    <div class="font1">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
-                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
-                    </div>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-12 blog-block">
-                    <h2>Heading</h2>
-                    <div class="font1">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
-                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
-                    </div>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-12 blog-block">
-                    <h2>Heading</h2>
-                    <div class="font1">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
-                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
-                    </div>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-12 blog-block">
-                    <h2>Heading</h2>
-                    <div class="font1">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
-                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
-                    </div>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-12 blog-block">
-                    <h2>Heading</h2>
-                    <div class="font1">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
-                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
-                    </div>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
-                </div>
+
+                </c:forEach>
             </div>
 
 
@@ -150,6 +113,7 @@
 
 </div> <!-- /container -->
 
-<%@include file="layout/footer.jsp"%>
+<%@include file="layout/footer.jsp" %>
 
-</body></html>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <hr>
 <footer class="jumbotron footer">
 
@@ -11,13 +12,14 @@
                 2
             </div>
             <div class="col-md-3">
-                3
+                3浙江
             </div>
             <div class="col-md-3">
-                4
+                4你好
             </div>
-            <p>Raven 2016</p>
+            <div class="col-md-12 text-center end-text">
+                Raven 2016 浙ICP备-1200000000
+            </div>
         </div>
-
     </div>
 </footer>
