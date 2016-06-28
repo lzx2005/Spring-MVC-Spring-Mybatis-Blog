@@ -47,7 +47,7 @@
 </nav>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
+<div class="jumbotron jumb-block">
     <div class="container">
         <h1>Hello, world!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
@@ -56,29 +56,100 @@
 </div>
 
 <div class="container">
-    <!-- Example row of columns -->
+
     <div class="row">
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
+
+        <div class="col-md-8">
+
+            <div class="row">
+                <div class="col-md-12 blog-block">
+                    <h2>Heading</h2>
+                    <div class="font1">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
+                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+                    </div>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
+                </div>
+                <div class="col-md-12 blog-block">
+                    <h2>Heading</h2>
+                    <div class="font1">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
+                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+                    </div>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
+                </div>
+                <div class="col-md-12 blog-block">
+                    <h2>Heading</h2>
+                    <div class="font1">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
+                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+                    </div>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
+                </div>
+                <div class="col-md-12 blog-block">
+                    <h2>Heading</h2>
+                    <div class="font1">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
+                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+                    </div>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
+                </div>
+                <div class="col-md-12 blog-block">
+                    <h2>Heading</h2>
+                    <div class="font1">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
+                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+                    </div>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
+                </div>
+                <div class="col-md-12 blog-block">
+                    <h2>Heading</h2>
+                    <div class="font1">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
+                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+                    </div>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
+                </div>
+                <div class="col-md-12 blog-block">
+                    <h2>Heading</h2>
+                    <div class="font1">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
+                        <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+                    </div>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
+                </div>
+            </div>
+
+
         </div>
         <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
+            <div class="my-info">
+                <div class="text-center">
+                    <img class="my-avatar" src="<%=basePath%>resources/image/avatar.png">
+                </div>
+                <div>
+                    <p>姓名:李正先</p>
+                    <p>年龄:16</p>
+                    <p>姓名:李正先</p>
+                    <p>姓名:李正先</p>
+                    <p>姓名:李正先</p>
+
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">View details »</a></p>
-        </div>
+
     </div>
 
-    <hr>
 
-    <%@include file="layout/footer.jsp"%>
 </div> <!-- /container -->
 
+<%@include file="layout/footer.jsp"%>
 
 </body></html>

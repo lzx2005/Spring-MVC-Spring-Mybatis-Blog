@@ -1,4 +1,4 @@
-<!-- Bootstrap core CSS -->
-<link href="<%=basePath %>resources/css/bootstrap.min.css" rel="stylesheet">
-<!-- Custom styles for this template -->
-<link href="<%=basePath %>resources/css/jumbotron.css" rel="stylesheet">
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="<%=basePath %>resources/css/custom.css">

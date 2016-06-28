@@ -1,0 +1,49 @@
+body{
+    background-color: #e5f0e5;
+}
+
+button{
+    border-radius: 0 !important;
+}
+
+a{
+    border-radius: 0 !important;
+}
+
+input{
+    border-radius: 0 !important;
+}
+
+.jumb-block{
+    background-color: #66afe9;
+}
+
+.font1{
+    color: gray;
+    font-size: 11px;
+}
+
+.blog-block{
+    padding: 0px 10px;
+    margin: 0 10px 10px 10px;
+    background-color: white;
+}
+
+.my-info{
+    background-color: white;
+    padding: 0px 10px 10px 10px;
+    margin: 0 10px 10px 10px;
+}
+
+.my-avatar{
+    margin: 0px auto;
+    width: 80px;
+    margin: 30px 0px;
+}
+
+.footer{
+    background-color: #222;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}

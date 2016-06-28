@@ -9,7 +9,9 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="<%=basePath %>resources/js/jquery.min.js"></script>
-<script src="<%=basePath %>resources/js/bootstrap.min.js"></script>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="<%=basePath %>resources/js/ie10-viewport-bug-workaround.js"></script>
