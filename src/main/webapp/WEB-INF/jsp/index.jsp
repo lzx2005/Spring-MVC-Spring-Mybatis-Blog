@@ -36,20 +36,19 @@
             <a class="navbar-brand" href="<%=basePath %>">Project name</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
+            <form class="navbar-form navbar-right" method="post" onSubmit="return loginScript.beforeSubmit()">
                 <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
+                    <input type="text" placeholder="用户名" id="username" name="username" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
+                    <input type="password" placeholder="密码" id="password" name="password" class="form-control">
                 </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
+                <button type="submit" class="btn btn-success">登录</button>
             </form>
         </div><!--/.navbar-collapse -->
     </div>
 </nav>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron jumb-block">
     <div class="container">
         <h1>Hello, world!</h1>
@@ -69,10 +68,9 @@
 
             <div class="row">
 
-                <c:forEach begin="1" end="10">
-
+                <c:forEach begin="1" end="10" varStatus="status">
                     <div class="col-md-12 blog-block">
-                        <h2>Heading</h2>
+                        <h2>Heading <c:out value="${status.index}"/></h2>
                         <div class="font1">
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
                             <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
@@ -114,6 +112,11 @@
 </div> <!-- /container -->
 
 <%@include file="layout/footer.jsp" %>
-
+<script type="text/javascript">
+    $(function () {
+        console.log("载入完毕");
+        loginScript.beforeSubmit();
+    });
+</script>
 </body>
 </html>

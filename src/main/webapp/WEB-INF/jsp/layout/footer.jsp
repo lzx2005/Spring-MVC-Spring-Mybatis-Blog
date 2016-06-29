@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <%--<div class="col-md-3">
                 1
             </div>
 
@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-3">
                 4你好
-            </div>
+            </div>--%>
             <div class="col-md-12 text-center end-text">
                 Raven 2016 浙ICP备-1200000000
             </div>
