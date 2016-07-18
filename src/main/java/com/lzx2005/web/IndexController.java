@@ -20,7 +20,7 @@ public class IndexController {
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index(Model model){
         System.out.println("访问首页");
-        return "index";
+        return "common/index";
     }
 
     @RequestMapping(

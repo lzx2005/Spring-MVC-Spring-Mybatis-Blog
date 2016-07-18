@@ -22,5 +22,5 @@
     <content:component-scan base-package="com.lzx2005.web"/>
 
     <!-- 配置默认访问方法 -->
-    <mvc:view-controller path="/" view-name="index"/>
+    <mvc:view-controller path="/" view-name="common/index"/>
 </beans>
