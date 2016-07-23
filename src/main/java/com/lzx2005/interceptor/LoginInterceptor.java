@@ -19,8 +19,9 @@ public class LoginInterceptor implements HandlerInterceptor {
         User user = (User) httpServletRequest.getSession().getAttribute("user");
         if(user!=null){
             isLogin = true;
+        }else{
+            httpServletResponse.sendRedirect("/");
         }
-        httpServletResponse.sendRedirect("/");
         return isLogin;
     }
 

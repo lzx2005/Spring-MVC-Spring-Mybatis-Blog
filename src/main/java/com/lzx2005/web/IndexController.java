@@ -27,7 +27,7 @@ public class IndexController {
     /**
      * 首页
      * @param model
-     * @return
+     * @return String
      */
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index(Model model){
@@ -35,6 +35,12 @@ public class IndexController {
         return "common/index";
     }
 
+
+    /**
+     * 登陆逻辑
+     * @param res
+     * @return ajaxResult
+     */
     @RequestMapping(
             value = "/login_sub",
             method = RequestMethod.POST,
@@ -59,6 +65,13 @@ public class IndexController {
         return ajaxResult;
     }
 
+
+    /**
+     * 退出登录逻辑
+     * @param res
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/log_out", method = RequestMethod.GET)
     public String log_out(HttpServletRequest res,Model model){
         System.out.println("退出登录");
