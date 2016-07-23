@@ -48,6 +48,7 @@ var loginScript = {
     beforeSubmit: function () {
         var username = $("#username").val();
         var password = $("#password").val();
+        console.log(username);
         if (tool.notNullAll(username, password)) {
             //填写了账号和密码
             var md5password = hex_md5(password);

@@ -60,6 +60,7 @@ public class UserServiceImpl implements UserService {
             result = new ServiceResult<User>(false,"wrong username or password");
         }else{
             //登陆成功
+            user.setPassword("-1");
             result = new ServiceResult<User>(true,user);
         }
 

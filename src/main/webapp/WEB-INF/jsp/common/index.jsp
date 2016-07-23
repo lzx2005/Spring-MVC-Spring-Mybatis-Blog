@@ -115,7 +115,7 @@
 <script type="text/javascript">
     $(function () {
         console.log("载入完毕");
-        loginScript.beforeSubmit();
+        //loginScript.beforeSubmit();
     });
 </script>
 </body>
