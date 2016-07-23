@@ -13,6 +13,7 @@ public class AdminController {
 
     @RequestMapping("/admin")
     public String index(Model model){
+        System.out.println("controller");
         return "admin/common/index";
     }
 

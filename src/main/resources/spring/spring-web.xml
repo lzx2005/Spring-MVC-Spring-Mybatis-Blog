@@ -23,4 +23,12 @@
 
     <!-- 配置默认访问方法 -->
     <mvc:view-controller path="/" view-name="common/index"/>
+    
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/admin/**"/>
+            <mvc:mapping path="/admin"/>
+            <bean id="LoginInterceptor" class="com.lzx2005.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>
