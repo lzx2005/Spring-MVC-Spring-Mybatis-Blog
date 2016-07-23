@@ -48,12 +48,22 @@ public class IndexController {
         ServiceResult<User> serviceResult = userService.login(username, password);
         if(serviceResult.isSuccess()){
             //登陆成功
-            ajaxResult = new AjaxResult<User>(true, "登陆成功", serviceResult.getData());
+            User user = serviceResult.getData();
+            res.getSession().setAttribute("user",user);
+            ajaxResult = new AjaxResult<User>(true, "登陆成功", user);
         }else{
             //登陆失败
             ajaxResult = new AjaxResult<User>(false,"登陆失败，用户名或者密码错误",null);
         }
 
         return ajaxResult;
+    }
+
+    @RequestMapping(value = "/log_out", method = RequestMethod.GET)
+    public String log_out(HttpServletRequest res,Model model){
+        System.out.println("退出登录");
+        res.getSession().removeAttribute("user");
+        res.getAttribute("user");
+        return "redirect:/";
     }
 }

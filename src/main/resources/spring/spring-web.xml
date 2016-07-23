@@ -31,4 +31,5 @@
             <bean id="LoginInterceptor" class="com.lzx2005.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
+
 </beans>

@@ -63,7 +63,13 @@ var loginScript = {
             password: md5password
         },
         function (data) {
+            if(data['success']){
+                console.log("登陆成功");
+            }else{
+                console.log("登陆失败");
+            }
             console.log(data);
+            window.location.reload();
         });
     }
 }
