@@ -1,6 +1,7 @@
 package com.lzx2005.interceptor;
 
 import com.lzx2005.entity.User;
+import com.lzx2005.tool.Log;
 import org.springframework.asm.Handle;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,7 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginInterceptor implements HandlerInterceptor {
 
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-        System.out.println("进入了拦截器");
+        //System.out.println("进入了拦截器");
+        Log.e(this.getClass().getName(),"123");
         boolean isLogin = false;
         User user = (User) httpServletRequest.getSession().getAttribute("user");
         if(user!=null){
