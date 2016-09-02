@@ -16,6 +16,8 @@ public interface ImageDao {
                         @Param("size") long size,
                         @Param("uploadTime") Date uploadTime);
 
+    public int addImageReturnId(Image image);
+
     public Image queryById(long imageId);
 
 }

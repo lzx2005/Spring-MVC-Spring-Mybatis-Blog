@@ -24,6 +24,15 @@ public class ImageDaoTest {
     public void addImage() throws Exception {
         int result = imageDao.addImage("1","/resource/image/sssss.jpg","/tomcat/webapps/ROOT/resource/image/sssss.jpg",20000,new Date());
         System.out.println(result);
+
+        Image image = new Image();
+        image.setAbsolutePath("/tomcat/webapps/ROOT/resource/image/sssss.jpg");
+        image.setName("2");
+        image.setRelativePath("/resource/image/sssss.jpg");
+        image.setSize(5000);
+        image.setUploadTime(new Date());
+        long id = imageDao.addImageReturnId(image);
+        System.out.println(image.getImageId());
     }
 
     @Test
