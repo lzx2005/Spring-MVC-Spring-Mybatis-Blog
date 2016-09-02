@@ -60,4 +60,16 @@ public class Image {
     public void setUploadTime(Date uploadTime) {
         this.uploadTime = uploadTime;
     }
+
+    @Override
+    public String toString() {
+        return "Image{" +
+                "imageId=" + imageId +
+                ", name='" + name + '\'' +
+                ", size=" + size +
+                ", relativePath='" + relativePath + '\'' +
+                ", absolutePath='" + absolutePath + '\'' +
+                ", uploadTime=" + uploadTime +
+                '}';
+    }
 }
