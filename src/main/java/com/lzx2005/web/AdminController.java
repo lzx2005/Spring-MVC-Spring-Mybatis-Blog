@@ -22,4 +22,9 @@ public class AdminController {
         System.out.println("select");
         return "admin/common/index";
     }
+
+    @RequestMapping("/admin/blog_add")
+    public String add(Model model){
+        return "admin/common/add";
+    }
 }
