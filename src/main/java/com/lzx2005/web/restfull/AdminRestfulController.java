@@ -19,6 +19,13 @@ import java.util.HashMap;
 @Controller
 @RequestMapping("/admin_restful")
 public class AdminRestfulController {
+    /**
+     * 测试接口
+     * @param testStr 测试字符串
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping(value = "test/{testStr}/restful_test", produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public HashMap<String,String> test(@PathVariable("testStr")String testStr, HttpServletRequest request, HttpServletResponse response) {
