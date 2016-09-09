@@ -60,6 +60,7 @@
             <script type="text/javascript" charset="utf-8" src="<%=basePath%>resources/tool/ueditor/ueditor.all.min.js"> </script>
             <script type="text/javascript" charset="utf-8" src="<%=basePath%>resources/tool/ueditor/lang/zh-cn/zh-cn.js"></script>
 
+            <script type="text/javascript" charset="utf-8" src="<%=basePath%>resources/tool/ueditor/jquery.form.js"></script>
             <script type="text/javascript">
                 //实例化编辑器
                 //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
@@ -118,12 +119,15 @@
                             alert("上传失败，请重新上传");
                         },
                         success: function (html, status) {
-                            if(status==""){
-                                alert("上传失败，请重新上传");
+                            console.log(html);
+
+                            if(status==""||html['success']==false){
+                                alert("上传失败，请重新上传,"+html['msg']);
                             }else if(html=="default.jpg"){
                                 alert("上传的不是图片，请重新上传");
                             }else{
-                                UE.getEditor('editor').setContent("<img src='/api/showImg?id="+html+"'>", true);
+                                var iid = html['msg'];
+                                UE.getEditor('editor').setContent("<img id='"+iid+"' src='"+html['data']+"'>", true);
                             }
                         }
                     });
