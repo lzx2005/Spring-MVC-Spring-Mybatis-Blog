@@ -48,6 +48,7 @@ var loginScript = {
     beforeSubmit: function () {
         var username = $("#username").val();
         var password = $("#password").val();
+        console.log(username);
         if (tool.notNullAll(username, password)) {
             //填写了账号和密码
             var md5password = hex_md5(password);
@@ -62,7 +63,13 @@ var loginScript = {
             password: md5password
         },
         function (data) {
+            if(data['success']){
+                console.log("登陆成功");
+            }else{
+                console.log("登陆失败");
+            }
             console.log(data);
+            window.location.reload();
         });
     }
 }

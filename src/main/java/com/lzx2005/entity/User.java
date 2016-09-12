@@ -1,14 +1,15 @@
 package com.lzx2005.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by Administrator on 2016/6/19.
  */
-public class User {
+public class User implements Serializable{
     private long userId;
     private String username;
-    private String password;
+    private transient String password;
     private Date createTime;
     private short userType;
 

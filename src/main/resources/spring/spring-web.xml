@@ -22,5 +22,26 @@
     <content:component-scan base-package="com.lzx2005.web"/>
 
     <!-- 配置默认访问方法 -->
-    <mvc:view-controller path="/" view-name="index"/>
+    <mvc:view-controller path="/" view-name="common/index"/>
+    
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/admin/**"/>
+            <mvc:mapping path="/admin"/>
+            <bean id="LoginInterceptor" class="com.lzx2005.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
+    <!-- 静态资源访问 -->
+    <mvc:resources location="/resources/upload_img" mapping="/img/**"/>
+    <!--<mvc:resources location="/js/" mapping="/js/**"/>-->
+
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8"></property>
+        <property name="maxUploadSize" value="10485760000"></property>
+        <property name="maxInMemorySize" value="40960"></property>
+    </bean>
+
 </beans>
