@@ -5459,3 +5459,701 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 2016-09-02 22:52:15  [ Thread-1:3563 ] - [ DEBUG ]  Retrieved dependent beans for bean 'LoginInterceptor': [org.springframework.web.servlet.handler.MappedInterceptor#1]
 2016-09-02 22:52:15  [ Thread-1:3564 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#4ae48ee2': [org.springframework.web.servlet.handler.MappedInterceptor#0]
 2016-09-02 22:52:15  [ Thread-1:3564 ] - [ DEBUG ]  Retrieved dependent beans for bean 'imageServiceImpl': [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:0 ] - [ DEBUG ]  SpringJUnit4ClassRunner constructor called with [class com.lzx2005.service.ImageServiceTest].
+2016-09-13 01:14:36  [ main:13 ] - [ DEBUG ]  Instantiating TestContextBootstrapper from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2016-09-13 01:14:36  [ main:39 ] - [ DEBUG ]  Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@6e649f9f declaringClass = 'com.lzx2005.service.ImageServiceTest', classes = '{}', locations = '{classpath:spring/spring-*.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2016-09-13 01:14:36  [ main:42 ] - [ DEBUG ]  Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:51 ] - [ DEBUG ]  @TestExecutionListeners is not present for class [com.lzx2005.service.ImageServiceTest]: using defaults.
+2016-09-13 01:14:36  [ main:56 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-09-13 01:14:36  [ main:74 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a2b25e6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@26c55db3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@678aa6a7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3fc3530c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@30815988]
+2016-09-13 01:14:36  [ main:76 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:77 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:80 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:80 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:82 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:82 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:83 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:83 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:85 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:85 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lzx2005.service.ImageServiceTest]
+2016-09-13 01:14:36  [ main:87 ] - [ DEBUG ]  Performing dependency injection for test context [[DefaultTestContext@353e58cd testClass = ImageServiceTest, testInstance = com.lzx2005.service.ImageServiceTest@1038160a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@522ef2d7 testClass = ImageServiceTest, locations = '{classpath:spring/spring-*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2016-09-13 01:14:36  [ main:87 ] - [ DEBUG ]  Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@522ef2d7 testClass = ImageServiceTest, locations = '{classpath:spring/spring-*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2016-09-13 01:14:36  [ main:87 ] - [ DEBUG ]  Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@522ef2d7 testClass = ImageServiceTest, locations = '{classpath:spring/spring-*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2016-09-13 01:14:36  [ main:171 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-13 01:14:36  [ main:174 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-13 01:14:36  [ main:175 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-13 01:14:36  [ main:191 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\spring]
+2016-09-13 01:14:36  [ main:191 ] - [ DEBUG ]  Searching directory [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\spring] for files matching pattern [C:/Users/Administrator/IdeaProjects/lzx2005/target/classes/spring/spring-*.xml]
+2016-09-13 01:14:36  [ main:195 ] - [ DEBUG ]  Resolved location pattern [classpath:spring/spring-*.xml] to resources [file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\spring\spring-dao.xml], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\spring\spring-service.xml], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\spring\spring-web.xml]]
+2016-09-13 01:14:36  [ main:196 ] - [ INFO ]  Loading XML bean definitions from file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\spring\spring-dao.xml]
+2016-09-13 01:14:36  [ main:222 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2016-09-13 01:14:36  [ main:254 ] - [ DEBUG ]  Loading schema mappings from [META-INF/spring.schemas]
+2016-09-13 01:14:36  [ main:260 ] - [ DEBUG ]  Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.1.xsd}
+2016-09-13 01:14:36  [ main:263 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.1.xsd
+2016-09-13 01:14:36  [ main:316 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.1.xsd
+2016-09-13 01:14:36  [ main:326 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.1.xsd
+2016-09-13 01:14:36  [ main:340 ] - [ DEBUG ]  Loading bean definitions
+2016-09-13 01:14:36  [ main:353 ] - [ DEBUG ]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2016-09-13 01:14:36  [ main:375 ] - [ DEBUG ]  Neither XML 'id' nor 'name' specified - using generated bean name [org.mybatis.spring.mapper.MapperScannerConfigurer#0]
+2016-09-13 01:14:36  [ main:376 ] - [ INFO ]  Loading XML bean definitions from file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\spring\spring-service.xml]
+2016-09-13 01:14:36  [ main:377 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2016-09-13 01:14:36  [ main:378 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.1.xsd
+2016-09-13 01:14:36  [ main:405 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.1.xsd
+2016-09-13 01:14:36  [ main:412 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.1.xsd
+2016-09-13 01:14:36  [ main:421 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tx/spring-tx.xsd] in classpath: org/springframework/transaction/config/spring-tx-4.1.xsd
+2016-09-13 01:14:36  [ main:427 ] - [ DEBUG ]  Loading bean definitions
+2016-09-13 01:14:36  [ main:442 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\service]
+2016-09-13 01:14:36  [ main:442 ] - [ DEBUG ]  Searching directory [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\service] for files matching pattern [C:/Users/Administrator/IdeaProjects/lzx2005/target/test-classes/com/lzx2005/service/**/*.class]
+2016-09-13 01:14:36  [ main:443 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service]
+2016-09-13 01:14:36  [ main:443 ] - [ DEBUG ]  Searching directory [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service] for files matching pattern [C:/Users/Administrator/IdeaProjects/lzx2005/target/classes/com/lzx2005/service/**/*.class]
+2016-09-13 01:14:36  [ main:444 ] - [ DEBUG ]  Searching directory [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\impl] for files matching pattern [C:/Users/Administrator/IdeaProjects/lzx2005/target/classes/com/lzx2005/service/**/*.class]
+2016-09-13 01:14:36  [ main:445 ] - [ DEBUG ]  Resolved location pattern [classpath*:com/lzx2005/service/**/*.class] to resources [file [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\service\BlogServiceTest.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\service\ImageServiceTest.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\service\UserServiceTest.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\BlogService.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\ImageService.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\impl\BlogServiceImpl.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\impl\ImageServiceImpl.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\impl\UserServiceImpl.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\UserService.class]]
+2016-09-13 01:14:37  [ main:481 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\impl\BlogServiceImpl.class]
+2016-09-13 01:14:37  [ main:483 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\impl\ImageServiceImpl.class]
+2016-09-13 01:14:37  [ main:483 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\service\impl\UserServiceImpl.class]
+2016-09-13 01:14:37  [ main:509 ] - [ INFO ]  Loading XML bean definitions from file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\spring\spring-web.xml]
+2016-09-13 01:14:37  [ main:510 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2016-09-13 01:14:37  [ main:512 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.1.xsd
+2016-09-13 01:14:37  [ main:532 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-4.1.xsd
+2016-09-13 01:14:37  [ main:540 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.1.xsd
+2016-09-13 01:14:37  [ main:553 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.1.xsd
+2016-09-13 01:14:37  [ main:563 ] - [ DEBUG ]  Loading bean definitions
+2016-09-13 01:14:37  [ main:612 ] - [ DEBUG ]  Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+2016-09-13 01:14:37  [ main:613 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\web]
+2016-09-13 01:14:37  [ main:614 ] - [ DEBUG ]  Searching directory [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\web] for files matching pattern [C:/Users/Administrator/IdeaProjects/lzx2005/target/classes/com/lzx2005/web/**/*.class]
+2016-09-13 01:14:37  [ main:614 ] - [ DEBUG ]  Searching directory [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\web\restfull] for files matching pattern [C:/Users/Administrator/IdeaProjects/lzx2005/target/classes/com/lzx2005/web/**/*.class]
+2016-09-13 01:14:37  [ main:615 ] - [ DEBUG ]  Resolved location pattern [classpath*:com/lzx2005/web/**/*.class] to resources [file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\web\AdminController.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\web\IndexController.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\web\restfull\AdminRestfulController.class]]
+2016-09-13 01:14:37  [ main:620 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\web\AdminController.class]
+2016-09-13 01:14:37  [ main:621 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\web\IndexController.class]
+2016-09-13 01:14:37  [ main:622 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\web\restfull\AdminRestfulController.class]
+2016-09-13 01:14:37  [ main:629 ] - [ DEBUG ]  Loaded 43 bean definitions from location pattern [classpath:spring/spring-*.xml]
+2016-09-13 01:14:37  [ main:633 ] - [ INFO ]  Refreshing org.springframework.context.support.GenericApplicationContext@602f958: startup date [Tue Sep 13 01:14:37 GMT+08:00 2016]; root of context hierarchy
+2016-09-13 01:14:37  [ main:633 ] - [ DEBUG ]  Bean factory for org.springframework.context.support.GenericApplicationContext@602f958: org.springframework.beans.factory.support.DefaultListableBeanFactory@57c89e3c: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,blogServiceImpl,imageServiceImpl,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,adminController,indexController,adminRestfulController,org.springframework.web.servlet.config.viewControllerHandlerMapping,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.MappedInterceptor#1,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#2,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,multipartResolver]; root of factory hierarchy
+2016-09-13 01:14:37  [ main:667 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-13 01:14:37  [ main:667 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-13 01:14:37  [ main:686 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:688 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-13 01:14:37  [ main:780 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2016-09-13 01:14:37  [ main:781 ] - [ DEBUG ]  Creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2016-09-13 01:14:37  [ main:781 ] - [ DEBUG ]  Eagerly caching bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:810 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2016-09-13 01:14:37  [ main:810 ] - [ DEBUG ]  Finished creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2016-09-13 01:14:37  [ main:812 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-13 01:14:37  [ main:812 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-13 01:14:37  [ main:812 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-13 01:14:37  [ main:815 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\dao]
+2016-09-13 01:14:37  [ main:815 ] - [ DEBUG ]  Searching directory [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\dao] for files matching pattern [C:/Users/Administrator/IdeaProjects/lzx2005/target/test-classes/com/lzx2005/dao/**/*.class]
+2016-09-13 01:14:37  [ main:816 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\dao]
+2016-09-13 01:14:37  [ main:816 ] - [ DEBUG ]  Searching directory [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\dao] for files matching pattern [C:/Users/Administrator/IdeaProjects/lzx2005/target/classes/com/lzx2005/dao/**/*.class]
+2016-09-13 01:14:37  [ main:817 ] - [ DEBUG ]  Resolved location pattern [classpath*:com/lzx2005/dao/**/*.class] to resources [file [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\dao\BlogDaoTest.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\dao\ImageDaoTest.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\dao\UserDaoTest.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\dao\BlogDao.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\dao\ImageDao.class], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\dao\UserDao.class]]
+2016-09-13 01:14:37  [ main:818 ] - [ DEBUG ]  Ignored because not a concrete top-level class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\dao\BlogDaoTest.class]
+2016-09-13 01:14:37  [ main:818 ] - [ DEBUG ]  Ignored because not a concrete top-level class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\dao\ImageDaoTest.class]
+2016-09-13 01:14:37  [ main:819 ] - [ DEBUG ]  Ignored because not a concrete top-level class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\test-classes\com\lzx2005\dao\UserDaoTest.class]
+2016-09-13 01:14:37  [ main:819 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\dao\BlogDao.class]
+2016-09-13 01:14:37  [ main:819 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\dao\ImageDao.class]
+2016-09-13 01:14:37  [ main:819 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\com\lzx2005\dao\UserDao.class]
+2016-09-13 01:14:37  [ main:820 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'blogDao' and 'com.lzx2005.dao.BlogDao' mapperInterface
+2016-09-13 01:14:37  [ main:820 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'imageDao' and 'com.lzx2005.dao.ImageDao' mapperInterface
+2016-09-13 01:14:37  [ main:820 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'userDao' and 'com.lzx2005.dao.UserDao' mapperInterface
+2016-09-13 01:14:37  [ main:826 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2016-09-13 01:14:37  [ main:826 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2016-09-13 01:14:37  [ main:826 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:834 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2016-09-13 01:14:37  [ main:835 ] - [ DEBUG ]  Adding [environmentProperties] PropertySource with lowest search precedence
+2016-09-13 01:14:37  [ main:835 ] - [ INFO ]  Loading properties file from class path resource [jdbc.properties]
+2016-09-13 01:14:37  [ main:835 ] - [ DEBUG ]  Adding [localProperties] PropertySource with lowest search precedence
+2016-09-13 01:14:37  [ main:837 ] - [ DEBUG ]  Searching for key 'driver' in [environmentProperties]
+2016-09-13 01:14:37  [ main:838 ] - [ DEBUG ]  Searching for key 'driver' in [systemProperties]
+2016-09-13 01:14:37  [ main:838 ] - [ DEBUG ]  Searching for key 'driver' in [systemEnvironment]
+2016-09-13 01:14:37  [ main:838 ] - [ DEBUG ]  Could not find key 'driver' in any property source. Returning [null]
+2016-09-13 01:14:37  [ main:838 ] - [ DEBUG ]  Searching for key 'driver' in [localProperties]
+2016-09-13 01:14:37  [ main:838 ] - [ DEBUG ]  Found key 'driver' in [localProperties] with type [String] and value 'com.mysql.jdbc.Driver'
+2016-09-13 01:14:37  [ main:839 ] - [ DEBUG ]  Searching for key 'url' in [environmentProperties]
+2016-09-13 01:14:37  [ main:839 ] - [ DEBUG ]  Searching for key 'url' in [systemProperties]
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Searching for key 'url' in [systemEnvironment]
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Could not find key 'url' in any property source. Returning [null]
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Searching for key 'url' in [localProperties]
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Found key 'url' in [localProperties] with type [String] and value 'jdbc:mysql://5739e0202fa12.sh.cdb.myqcloud.com:5254/lzx2005?useUnicode=true&characterEncoding=utf8'
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Searching for key 'user' in [environmentProperties]
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Searching for key 'user' in [systemProperties]
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Searching for key 'user' in [systemEnvironment]
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Could not find key 'user' in any property source. Returning [null]
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Searching for key 'user' in [localProperties]
+2016-09-13 01:14:37  [ main:840 ] - [ DEBUG ]  Found key 'user' in [localProperties] with type [String] and value 'cdb_outerroot'
+2016-09-13 01:14:37  [ main:841 ] - [ DEBUG ]  Searching for key 'password' in [environmentProperties]
+2016-09-13 01:14:37  [ main:841 ] - [ DEBUG ]  Searching for key 'password' in [systemProperties]
+2016-09-13 01:14:37  [ main:841 ] - [ DEBUG ]  Searching for key 'password' in [systemEnvironment]
+2016-09-13 01:14:37  [ main:841 ] - [ DEBUG ]  Could not find key 'password' in any property source. Returning [null]
+2016-09-13 01:14:37  [ main:841 ] - [ DEBUG ]  Searching for key 'password' in [localProperties]
+2016-09-13 01:14:37  [ main:841 ] - [ DEBUG ]  Found key 'password' in [localProperties] with type [String] and value 'lzx2005rrr'
+2016-09-13 01:14:37  [ main:848 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-13 01:14:37  [ main:849 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-13 01:14:37  [ main:849 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:849 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-13 01:14:37  [ main:849 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-13 01:14:37  [ main:850 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-13 01:14:37  [ main:850 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:850 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-13 01:14:37  [ main:850 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-13 01:14:37  [ main:850 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-13 01:14:37  [ main:854 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-13 01:14:37  [ main:863 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:874 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-13 01:14:37  [ main:876 ] - [ DEBUG ]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@23d26752]
+2016-09-13 01:14:37  [ main:878 ] - [ DEBUG ]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3fbcc0c6]
+2016-09-13 01:14:37  [ main:886 ] - [ DEBUG ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@57c89e3c: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,blogServiceImpl,imageServiceImpl,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,adminController,indexController,adminRestfulController,org.springframework.web.servlet.config.viewControllerHandlerMapping,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.MappedInterceptor#1,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#2,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,multipartResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,blogDao,imageDao,userDao]; root of factory hierarchy
+2016-09-13 01:14:37  [ main:887 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2016-09-13 01:14:37  [ main:887 ] - [ DEBUG ]  Creating shared instance of singleton bean 'dataSource'
+2016-09-13 01:14:37  [ main:887 ] - [ DEBUG ]  Creating instance of bean 'dataSource'
+2016-09-13 01:14:37  [ main:901 ] - [ INFO ]  MLog clients using log4j logging.
+2016-09-13 01:14:37  [ main:1056 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-09-13 01:14:37  [ main:1099 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge1669j8pkwf312g2guk|37b0e229] registered.
+2016-09-13 01:14:37  [ main:1114 ] - [ DEBUG ]  Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:1153 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:37  [ main:1153 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:37  [ main:1155 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:1160 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2016-09-13 01:14:37  [ main:1160 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2016-09-13 01:14:37  [ main:1161 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:1164 ] - [ DEBUG ]  Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:37  [ main:1166 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2016-09-13 01:14:37  [ main:1167 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:37  [ main:1180 ] - [ DEBUG ]  Finished creating instance of bean 'dataSource'
+2016-09-13 01:14:37  [ main:1181 ] - [ DEBUG ]  Creating shared instance of singleton bean 'sqlSessionFactory'
+2016-09-13 01:14:37  [ main:1181 ] - [ DEBUG ]  Creating instance of bean 'sqlSessionFactory'
+2016-09-13 01:14:37  [ main:1260 ] - [ DEBUG ]  Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+2016-09-13 01:14:37  [ main:1265 ] - [ DEBUG ]  Returning cached instance of singleton bean 'dataSource'
+2016-09-13 01:14:37  [ main:1265 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\mapper]
+2016-09-13 01:14:37  [ main:1265 ] - [ DEBUG ]  Searching directory [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\mapper] for files matching pattern [C:/Users/Administrator/IdeaProjects/lzx2005/target/classes/mapper/*.xml]
+2016-09-13 01:14:37  [ main:1266 ] - [ DEBUG ]  Resolved location pattern [classpath:mapper/*.xml] to resources [file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\mapper\blogDao.xml], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\mapper\imageDao.xml], file [C:\Users\Administrator\IdeaProjects\lzx2005\target\classes\mapper\userDao.xml]]
+2016-09-13 01:14:37  [ main:1267 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+2016-09-13 01:14:38  [ main:1496 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1497 ] - [ DEBUG ]  Finished creating instance of bean 'sqlSessionFactory'
+2016-09-13 01:14:38  [ main:1498 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2016-09-13 01:14:38  [ main:1498 ] - [ DEBUG ]  Creating shared instance of singleton bean 'blogServiceImpl'
+2016-09-13 01:14:38  [ main:1498 ] - [ DEBUG ]  Creating instance of bean 'blogServiceImpl'
+2016-09-13 01:14:38  [ main:1500 ] - [ DEBUG ]  Registered injected element on class [com.lzx2005.service.impl.BlogServiceImpl]: AutowiredFieldElement for private com.lzx2005.dao.BlogDao com.lzx2005.service.impl.BlogServiceImpl.blogDao
+2016-09-13 01:14:38  [ main:1500 ] - [ DEBUG ]  Eagerly caching bean 'blogServiceImpl' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1501 ] - [ DEBUG ]  Processing injected element of bean 'blogServiceImpl': AutowiredFieldElement for private com.lzx2005.dao.BlogDao com.lzx2005.service.impl.BlogServiceImpl.blogDao
+2016-09-13 01:14:38  [ main:1504 ] - [ DEBUG ]  Creating shared instance of singleton bean 'blogDao'
+2016-09-13 01:14:38  [ main:1504 ] - [ DEBUG ]  Creating instance of bean 'blogDao'
+2016-09-13 01:14:38  [ main:1505 ] - [ DEBUG ]  Eagerly caching bean 'blogDao' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1511 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-09-13 01:14:38  [ main:1511 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1521 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'blogDao'
+2016-09-13 01:14:38  [ main:1521 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1522 ] - [ DEBUG ]  Finished creating instance of bean 'blogDao'
+2016-09-13 01:14:38  [ main:1522 ] - [ DEBUG ]  Creating shared instance of singleton bean 'imageDao'
+2016-09-13 01:14:38  [ main:1522 ] - [ DEBUG ]  Creating instance of bean 'imageDao'
+2016-09-13 01:14:38  [ main:1523 ] - [ DEBUG ]  Eagerly caching bean 'imageDao' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1523 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-09-13 01:14:38  [ main:1523 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'imageDao'
+2016-09-13 01:14:38  [ main:1523 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1523 ] - [ DEBUG ]  Finished creating instance of bean 'imageDao'
+2016-09-13 01:14:38  [ main:1523 ] - [ DEBUG ]  Creating shared instance of singleton bean 'userDao'
+2016-09-13 01:14:38  [ main:1523 ] - [ DEBUG ]  Creating instance of bean 'userDao'
+2016-09-13 01:14:38  [ main:1524 ] - [ DEBUG ]  Eagerly caching bean 'userDao' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1524 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-09-13 01:14:38  [ main:1524 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'userDao'
+2016-09-13 01:14:38  [ main:1524 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1524 ] - [ DEBUG ]  Finished creating instance of bean 'userDao'
+2016-09-13 01:14:38  [ main:1525 ] - [ DEBUG ]  Returning cached instance of singleton bean 'blogDao'
+2016-09-13 01:14:38  [ main:1527 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1529 ] - [ DEBUG ]  Autowiring by type from bean name 'blogServiceImpl' to bean named 'blogDao'
+2016-09-13 01:14:38  [ main:1529 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1531 ] - [ DEBUG ]  Finished creating instance of bean 'blogServiceImpl'
+2016-09-13 01:14:38  [ main:1531 ] - [ DEBUG ]  Creating shared instance of singleton bean 'imageServiceImpl'
+2016-09-13 01:14:38  [ main:1531 ] - [ DEBUG ]  Creating instance of bean 'imageServiceImpl'
+2016-09-13 01:14:38  [ main:1532 ] - [ DEBUG ]  Registered injected element on class [com.lzx2005.service.impl.ImageServiceImpl]: AutowiredFieldElement for private com.lzx2005.dao.ImageDao com.lzx2005.service.impl.ImageServiceImpl.imageDao
+2016-09-13 01:14:38  [ main:1532 ] - [ DEBUG ]  Eagerly caching bean 'imageServiceImpl' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1533 ] - [ DEBUG ]  Processing injected element of bean 'imageServiceImpl': AutowiredFieldElement for private com.lzx2005.dao.ImageDao com.lzx2005.service.impl.ImageServiceImpl.imageDao
+2016-09-13 01:14:38  [ main:1534 ] - [ DEBUG ]  Returning cached instance of singleton bean 'imageDao'
+2016-09-13 01:14:38  [ main:1535 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1536 ] - [ DEBUG ]  Autowiring by type from bean name 'imageServiceImpl' to bean named 'imageDao'
+2016-09-13 01:14:38  [ main:1536 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1536 ] - [ DEBUG ]  Finished creating instance of bean 'imageServiceImpl'
+2016-09-13 01:14:38  [ main:1536 ] - [ DEBUG ]  Creating shared instance of singleton bean 'userServiceImpl'
+2016-09-13 01:14:38  [ main:1536 ] - [ DEBUG ]  Creating instance of bean 'userServiceImpl'
+2016-09-13 01:14:38  [ main:1537 ] - [ DEBUG ]  Registered injected element on class [com.lzx2005.service.impl.UserServiceImpl]: AutowiredFieldElement for private com.lzx2005.dao.UserDao com.lzx2005.service.impl.UserServiceImpl.userDao
+2016-09-13 01:14:38  [ main:1537 ] - [ DEBUG ]  Eagerly caching bean 'userServiceImpl' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1538 ] - [ DEBUG ]  Processing injected element of bean 'userServiceImpl': AutowiredFieldElement for private com.lzx2005.dao.UserDao com.lzx2005.service.impl.UserServiceImpl.userDao
+2016-09-13 01:14:38  [ main:1539 ] - [ DEBUG ]  Returning cached instance of singleton bean 'userDao'
+2016-09-13 01:14:38  [ main:1540 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1541 ] - [ DEBUG ]  Autowiring by type from bean name 'userServiceImpl' to bean named 'userDao'
+2016-09-13 01:14:38  [ main:1541 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1542 ] - [ DEBUG ]  Finished creating instance of bean 'userServiceImpl'
+2016-09-13 01:14:38  [ main:1542 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-13 01:14:38  [ main:1542 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-13 01:14:38  [ main:1542 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-13 01:14:38  [ main:1542 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-13 01:14:38  [ main:1542 ] - [ DEBUG ]  Creating shared instance of singleton bean 'transactionManager'
+2016-09-13 01:14:38  [ main:1542 ] - [ DEBUG ]  Creating instance of bean 'transactionManager'
+2016-09-13 01:14:38  [ main:1547 ] - [ DEBUG ]  Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1550 ] - [ DEBUG ]  Returning cached instance of singleton bean 'dataSource'
+2016-09-13 01:14:38  [ main:1550 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'transactionManager'
+2016-09-13 01:14:38  [ main:1550 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1552 ] - [ DEBUG ]  Finished creating instance of bean 'transactionManager'
+2016-09-13 01:14:38  [ main:1552 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-13 01:14:38  [ main:1552 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2016-09-13 01:14:38  [ main:1552 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2016-09-13 01:14:38  [ main:1552 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2016-09-13 01:14:38  [ main:1553 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1556 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2016-09-13 01:14:38  [ main:1556 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2016-09-13 01:14:38  [ main:1556 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2016-09-13 01:14:38  [ main:1556 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1557 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2016-09-13 01:14:38  [ main:1557 ] - [ DEBUG ]  Creating instance of bean 'mvcContentNegotiationManager'
+2016-09-13 01:14:38  [ main:1557 ] - [ DEBUG ]  Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1564 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'mvcContentNegotiationManager'
+2016-09-13 01:14:38  [ main:1565 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1566 ] - [ DEBUG ]  Finished creating instance of bean 'mvcContentNegotiationManager'
+2016-09-13 01:14:38  [ main:1566 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-09-13 01:14:38  [ main:1566 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-09-13 01:14:38  [ main:1571 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1580 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2016-09-13 01:14:38  [ main:1580 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1581 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-09-13 01:14:38  [ main:1581 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-09-13 01:14:38  [ main:1584 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#1c7e8e6b'
+2016-09-13 01:14:38  [ main:1584 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-09-13 01:14:38  [ main:1584 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-09-13 01:14:38  [ main:1585 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1587 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-09-13 01:14:38  [ main:1596 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1596 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-09-13 01:14:38  [ main:1596 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1602 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1603 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#1c7e8e6b'
+2016-09-13 01:14:38  [ main:1605 ] - [ DEBUG ]  No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+2016-09-13 01:14:38  [ main:1605 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1606 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1607 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-09-13 01:14:38  [ main:1607 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-09-13 01:14:38  [ main:1607 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-09-13 01:14:38  [ main:1607 ] - [ DEBUG ]  Creating instance of bean 'LoginInterceptor'
+2016-09-13 01:14:38  [ main:1609 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1609 ] - [ DEBUG ]  Finished creating instance of bean 'LoginInterceptor'
+2016-09-13 01:14:38  [ main:1610 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#1' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1610 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1610 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-09-13 01:14:38  [ main:1610 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#2'
+2016-09-13 01:14:38  [ main:1610 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#2'
+2016-09-13 01:14:38  [ main:1610 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#5d463027'
+2016-09-13 01:14:38  [ main:1610 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#72db0d07'
+2016-09-13 01:14:38  [ main:1612 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1613 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#72db0d07'
+2016-09-13 01:14:38  [ main:1614 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1615 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#5d463027'
+2016-09-13 01:14:38  [ main:1615 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#2' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1615 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1615 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#2'
+2016-09-13 01:14:38  [ main:1615 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-09-13 01:14:38  [ main:1616 ] - [ DEBUG ]  Looking for request mappings in application context: org.springframework.context.support.GenericApplicationContext@602f958: startup date [Tue Sep 13 01:14:37 GMT+08:00 2016]; root of context hierarchy
+2016-09-13 01:14:38  [ main:1627 ] - [ INFO ]  Mapped "{[/admin/blog_add]}" onto public java.lang.String com.lzx2005.web.AdminController.add(org.springframework.ui.Model)
+2016-09-13 01:14:38  [ main:1627 ] - [ INFO ]  Mapped "{[/admin]}" onto public java.lang.String com.lzx2005.web.AdminController.index(org.springframework.ui.Model)
+2016-09-13 01:14:38  [ main:1627 ] - [ INFO ]  Mapped "{[/admin/select]}" onto public java.lang.String com.lzx2005.web.AdminController.select(org.springframework.ui.Model)
+2016-09-13 01:14:38  [ main:1629 ] - [ INFO ]  Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.lzx2005.web.IndexController.index(org.springframework.ui.Model)
+2016-09-13 01:14:38  [ main:1630 ] - [ INFO ]  Mapped "{[/log_out],methods=[GET]}" onto public java.lang.String com.lzx2005.web.IndexController.log_out(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2016-09-13 01:14:38  [ main:1630 ] - [ INFO ]  Mapped "{[/login_sub],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lzx2005.dto.AjaxResult<com.lzx2005.entity.User> com.lzx2005.web.IndexController.login_sub(javax.servlet.http.HttpServletRequest)
+2016-09-13 01:14:38  [ main:1631 ] - [ INFO ]  Mapped "{[/admin_restful/test/{testStr}/restful_test],produces=[application/json;charset=UTF-8]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.lzx2005.web.restfull.AdminRestfulController.test(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-13 01:14:38  [ main:1631 ] - [ INFO ]  Mapped "{[/admin_restful/image/upload],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lzx2005.dto.AjaxResult<java.lang.String> com.lzx2005.web.restfull.AdminRestfulController.upload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-13 01:14:38  [ main:1632 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1633 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-09-13 01:14:38  [ main:1633 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-09-13 01:14:38  [ main:1633 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-09-13 01:14:38  [ main:1633 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-09-13 01:14:38  [ main:1809 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1820 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2016-09-13 01:14:38  [ main:1820 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#7bb55b75'
+2016-09-13 01:14:38  [ main:1825 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-09-13 01:14:38  [ main:1826 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1826 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#7bb55b75'
+2016-09-13 01:14:38  [ main:1827 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#263110c2'
+2016-09-13 01:14:38  [ main:1831 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1832 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#263110c2'
+2016-09-13 01:14:38  [ main:1832 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#60393527'
+2016-09-13 01:14:38  [ main:1835 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1836 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#60393527'
+2016-09-13 01:14:38  [ main:1836 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#e959286'
+2016-09-13 01:14:38  [ main:1838 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1839 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#e959286'
+2016-09-13 01:14:38  [ main:1839 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#5df614ad'
+2016-09-13 01:14:38  [ main:1843 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1843 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#5df614ad'
+2016-09-13 01:14:38  [ main:1844 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#6ec0e8a7'
+2016-09-13 01:14:38  [ main:1850 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1851 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#6ec0e8a7'
+2016-09-13 01:14:38  [ main:1851 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#25ad21cb'
+2016-09-13 01:14:38  [ main:1857 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1858 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#25ad21cb'
+2016-09-13 01:14:38  [ main:1858 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#6c178eb9'
+2016-09-13 01:14:38  [ main:1858 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#27be789c'
+2016-09-13 01:14:38  [ main:1863 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name '(inner bean)#27be789c'
+2016-09-13 01:14:38  [ main:1864 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1865 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#27be789c'
+2016-09-13 01:14:38  [ main:1865 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1873 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1874 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#6c178eb9'
+2016-09-13 01:14:38  [ main:1875 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#18f68555'
+2016-09-13 01:14:38  [ main:1878 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1878 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#18f68555'
+2016-09-13 01:14:38  [ main:1880 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-09-13 01:14:38  [ main:1880 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.context.support.GenericApplicationContext@602f958: startup date [Tue Sep 13 01:14:37 GMT+08:00 2016]; root of context hierarchy
+2016-09-13 01:14:38  [ main:1899 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1900 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-09-13 01:14:38  [ main:1900 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2016-09-13 01:14:38  [ main:1900 ] - [ DEBUG ]  Creating instance of bean 'mvcUriComponentsContributor'
+2016-09-13 01:14:38  [ main:1900 ] - [ DEBUG ]  Eagerly caching bean 'mvcUriComponentsContributor' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1902 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#3ea97e14'
+2016-09-13 01:14:38  [ main:1906 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2016-09-13 01:14:38  [ main:1907 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#7bb55b75#1'
+2016-09-13 01:14:38  [ main:1907 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-09-13 01:14:38  [ main:1907 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1907 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#7bb55b75#1'
+2016-09-13 01:14:38  [ main:1907 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#263110c2#1'
+2016-09-13 01:14:38  [ main:1908 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1908 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#263110c2#1'
+2016-09-13 01:14:38  [ main:1908 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#60393527#1'
+2016-09-13 01:14:38  [ main:1910 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1910 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#60393527#1'
+2016-09-13 01:14:38  [ main:1910 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#e959286#1'
+2016-09-13 01:14:38  [ main:1911 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1911 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#e959286#1'
+2016-09-13 01:14:38  [ main:1911 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#5df614ad#1'
+2016-09-13 01:14:38  [ main:1912 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1912 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#5df614ad#1'
+2016-09-13 01:14:38  [ main:1912 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#6ec0e8a7#1'
+2016-09-13 01:14:38  [ main:1914 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1915 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#6ec0e8a7#1'
+2016-09-13 01:14:38  [ main:1915 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#25ad21cb#1'
+2016-09-13 01:14:38  [ main:1916 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1916 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#25ad21cb#1'
+2016-09-13 01:14:38  [ main:1916 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#6c178eb9#1'
+2016-09-13 01:14:38  [ main:1916 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#27be789c#1'
+2016-09-13 01:14:38  [ main:1916 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name '(inner bean)#27be789c#1'
+2016-09-13 01:14:38  [ main:1917 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1917 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#27be789c#1'
+2016-09-13 01:14:38  [ main:1917 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1918 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1918 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#6c178eb9#1'
+2016-09-13 01:14:38  [ main:1918 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#18f68555#1'
+2016-09-13 01:14:38  [ main:1919 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1919 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#18f68555#1'
+2016-09-13 01:14:38  [ main:1919 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name '(inner bean)#3ea97e14'
+2016-09-13 01:14:38  [ main:1920 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.context.support.GenericApplicationContext@602f958: startup date [Tue Sep 13 01:14:37 GMT+08:00 2016]; root of context hierarchy
+2016-09-13 01:14:38  [ main:1920 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1921 ] - [ DEBUG ]  Returning eagerly cached instance of singleton bean 'mvcUriComponentsContributor' that is not fully initialized yet - a consequence of a circular reference
+2016-09-13 01:14:38  [ main:1922 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1922 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#3ea97e14'
+2016-09-13 01:14:38  [ main:1922 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-09-13 01:14:38  [ main:1923 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'mvcUriComponentsContributor'
+2016-09-13 01:14:38  [ main:1923 ] - [ DEBUG ]  Finished creating instance of bean 'mvcUriComponentsContributor'
+2016-09-13 01:14:38  [ main:1923 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-09-13 01:14:38  [ main:1923 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1923 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1927 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1932 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2016-09-13 01:14:38  [ main:1932 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#263110c2#2'
+2016-09-13 01:14:38  [ main:1933 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1933 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#263110c2#2'
+2016-09-13 01:14:38  [ main:1933 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#60393527#2'
+2016-09-13 01:14:38  [ main:1935 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1935 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#60393527#2'
+2016-09-13 01:14:38  [ main:1935 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#e959286#2'
+2016-09-13 01:14:38  [ main:1936 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1936 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#e959286#2'
+2016-09-13 01:14:38  [ main:1936 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#5df614ad#2'
+2016-09-13 01:14:38  [ main:1938 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1938 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#5df614ad#2'
+2016-09-13 01:14:38  [ main:1938 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#6ec0e8a7#2'
+2016-09-13 01:14:38  [ main:1940 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1941 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#6ec0e8a7#2'
+2016-09-13 01:14:38  [ main:1941 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#25ad21cb#2'
+2016-09-13 01:14:38  [ main:1941 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1942 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#25ad21cb#2'
+2016-09-13 01:14:38  [ main:1942 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#6c178eb9#2'
+2016-09-13 01:14:38  [ main:1942 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#27be789c#2'
+2016-09-13 01:14:38  [ main:1942 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name '(inner bean)#27be789c#2'
+2016-09-13 01:14:38  [ main:1943 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1943 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#27be789c#2'
+2016-09-13 01:14:38  [ main:1943 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1943 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1944 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#6c178eb9#2'
+2016-09-13 01:14:38  [ main:1944 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#50d02707'
+2016-09-13 01:14:38  [ main:1944 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1944 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#50d02707'
+2016-09-13 01:14:38  [ main:1945 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1945 ] - [ DEBUG ]  Looking for exception mappings: org.springframework.context.support.GenericApplicationContext@602f958: startup date [Tue Sep 13 01:14:37 GMT+08:00 2016]; root of context hierarchy
+2016-09-13 01:14:38  [ main:1947 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1947 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1947 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1947 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1948 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1950 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1950 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1950 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1950 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1951 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1952 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1952 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2016-09-13 01:14:38  [ main:1952 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2016-09-13 01:14:38  [ main:1952 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2016-09-13 01:14:38  [ main:1953 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#2'
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Looking for URL mappings in application context: org.springframework.context.support.GenericApplicationContext@602f958: startup date [Tue Sep 13 01:14:37 GMT+08:00 2016]; root of context hierarchy
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'dataSource': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'sqlSessionFactory': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'blogServiceImpl': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'imageServiceImpl': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'userServiceImpl': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2016-09-13 01:14:38  [ main:1957 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'transactionManager': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.transaction.interceptor.TransactionInterceptor#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'adminController': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'indexController': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'adminRestfulController': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.config.viewControllerHandlerMapping': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'mvcPathMatcher': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2016-09-13 01:14:38  [ main:1958 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#1': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#2': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'multipartResolver': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'blogDao': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'imageDao': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'userDao': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'environment': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'systemProperties': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'systemEnvironment': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'messageSource': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2016-09-13 01:14:38  [ main:1959 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1960 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2016-09-13 01:14:38  [ main:1960 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2016-09-13 01:14:38  [ main:1960 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2016-09-13 01:14:38  [ main:1960 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1961 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1961 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2016-09-13 01:14:38  [ main:1961 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2016-09-13 01:14:38  [ main:1961 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2016-09-13 01:14:38  [ main:1961 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1962 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1962 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2016-09-13 01:14:38  [ main:1962 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:1962 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:1962 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1963 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1964 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:1964 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2016-09-13 01:14:38  [ main:1964 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2016-09-13 01:14:38  [ main:1964 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1969 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-09-13 01:14:38  [ main:1969 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-09-13 01:14:38  [ main:1970 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#2'
+2016-09-13 01:14:38  [ main:1970 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:1970 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:1970 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1970 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2016-09-13 01:14:38  [ main:1970 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2016-09-13 01:14:38  [ main:1970 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2016-09-13 01:14:38  [ main:1975 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1979 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1980 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2016-09-13 01:14:38  [ main:1980 ] - [ DEBUG ]  Creating shared instance of singleton bean 'adminController'
+2016-09-13 01:14:38  [ main:1980 ] - [ DEBUG ]  Creating instance of bean 'adminController'
+2016-09-13 01:14:38  [ main:1981 ] - [ DEBUG ]  Eagerly caching bean 'adminController' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1982 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1983 ] - [ DEBUG ]  Finished creating instance of bean 'adminController'
+2016-09-13 01:14:38  [ main:1983 ] - [ DEBUG ]  Creating shared instance of singleton bean 'indexController'
+2016-09-13 01:14:38  [ main:1983 ] - [ DEBUG ]  Creating instance of bean 'indexController'
+2016-09-13 01:14:38  [ main:1984 ] - [ DEBUG ]  Registered injected element on class [com.lzx2005.web.IndexController]: AutowiredFieldElement for private com.lzx2005.service.UserService com.lzx2005.web.IndexController.userService
+2016-09-13 01:14:38  [ main:1984 ] - [ DEBUG ]  Eagerly caching bean 'indexController' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1985 ] - [ DEBUG ]  Processing injected element of bean 'indexController': AutowiredFieldElement for private com.lzx2005.service.UserService com.lzx2005.web.IndexController.userService
+2016-09-13 01:14:38  [ main:1985 ] - [ DEBUG ]  Returning cached instance of singleton bean 'userServiceImpl'
+2016-09-13 01:14:38  [ main:1985 ] - [ DEBUG ]  Autowiring by type from bean name 'indexController' to bean named 'userServiceImpl'
+2016-09-13 01:14:38  [ main:1985 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1986 ] - [ DEBUG ]  Finished creating instance of bean 'indexController'
+2016-09-13 01:14:38  [ main:1986 ] - [ DEBUG ]  Creating shared instance of singleton bean 'adminRestfulController'
+2016-09-13 01:14:38  [ main:1986 ] - [ DEBUG ]  Creating instance of bean 'adminRestfulController'
+2016-09-13 01:14:38  [ main:1987 ] - [ DEBUG ]  Registered injected element on class [com.lzx2005.web.restfull.AdminRestfulController]: AutowiredFieldElement for private com.lzx2005.dao.ImageDao com.lzx2005.web.restfull.AdminRestfulController.imageDao
+2016-09-13 01:14:38  [ main:1987 ] - [ DEBUG ]  Eagerly caching bean 'adminRestfulController' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1988 ] - [ DEBUG ]  Processing injected element of bean 'adminRestfulController': AutowiredFieldElement for private com.lzx2005.dao.ImageDao com.lzx2005.web.restfull.AdminRestfulController.imageDao
+2016-09-13 01:14:38  [ main:1988 ] - [ DEBUG ]  Returning cached instance of singleton bean 'imageDao'
+2016-09-13 01:14:38  [ main:1988 ] - [ DEBUG ]  Autowiring by type from bean name 'adminRestfulController' to bean named 'imageDao'
+2016-09-13 01:14:38  [ main:1988 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1989 ] - [ DEBUG ]  Finished creating instance of bean 'adminRestfulController'
+2016-09-13 01:14:38  [ main:1989 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+2016-09-13 01:14:38  [ main:1989 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+2016-09-13 01:14:38  [ main:1990 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1990 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcPathMatcher'
+2016-09-13 01:14:38  [ main:1990 ] - [ DEBUG ]  Creating instance of bean 'mvcPathMatcher'
+2016-09-13 01:14:38  [ main:1990 ] - [ DEBUG ]  Eagerly caching bean 'mvcPathMatcher' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1991 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1992 ] - [ DEBUG ]  Finished creating instance of bean 'mvcPathMatcher'
+2016-09-13 01:14:38  [ main:1992 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2016-09-13 01:14:38  [ main:1992 ] - [ DEBUG ]  Creating instance of bean 'mvcUrlPathHelper'
+2016-09-13 01:14:38  [ main:1992 ] - [ DEBUG ]  Eagerly caching bean 'mvcUrlPathHelper' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:1993 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1994 ] - [ DEBUG ]  Finished creating instance of bean 'mvcUrlPathHelper'
+2016-09-13 01:14:38  [ main:1994 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#75221ed7'
+2016-09-13 01:14:38  [ main:1998 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1998 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#75221ed7'
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#2'
+2016-09-13 01:14:38  [ main:1999 ] - [ INFO ]  Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcPathMatcher'
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcUrlPathHelper'
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2016-09-13 01:14:38  [ main:1999 ] - [ DEBUG ]  Creating instance of bean 'mvcResourceUrlProvider'
+2016-09-13 01:14:38  [ main:2000 ] - [ DEBUG ]  Eagerly caching bean 'mvcResourceUrlProvider' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:2000 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:2000 ] - [ DEBUG ]  Finished creating instance of bean 'mvcResourceUrlProvider'
+2016-09-13 01:14:38  [ main:2000 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#2'
+2016-09-13 01:14:38  [ main:2000 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:2000 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:2002 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:2005 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:2005 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:2005 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:2005 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2016-09-13 01:14:38  [ main:2005 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2016-09-13 01:14:38  [ main:2006 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:2006 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcPathMatcher'
+2016-09-13 01:14:38  [ main:2006 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcUrlPathHelper'
+2016-09-13 01:14:38  [ main:2007 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-09-13 01:14:38  [ main:2007 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-09-13 01:14:38  [ main:2007 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#2'
+2016-09-13 01:14:38  [ main:2007 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:2007 ] - [ INFO ]  Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-09-13 01:14:38  [ main:2007 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:2007 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2016-09-13 01:14:38  [ main:2007 ] - [ DEBUG ]  Creating shared instance of singleton bean 'multipartResolver'
+2016-09-13 01:14:38  [ main:2007 ] - [ DEBUG ]  Creating instance of bean 'multipartResolver'
+2016-09-13 01:14:38  [ main:2013 ] - [ DEBUG ]  Eagerly caching bean 'multipartResolver' to allow for resolving potential circular references
+2016-09-13 01:14:38  [ main:2016 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:2016 ] - [ DEBUG ]  Finished creating instance of bean 'multipartResolver'
+2016-09-13 01:14:38  [ main:2016 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-13 01:14:38  [ main:2016 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-13 01:14:38  [ main:2016 ] - [ DEBUG ]  Returning cached instance of singleton bean 'blogDao'
+2016-09-13 01:14:38  [ main:2016 ] - [ DEBUG ]  Returning cached instance of singleton bean 'imageDao'
+2016-09-13 01:14:38  [ main:2016 ] - [ DEBUG ]  Returning cached instance of singleton bean 'userDao'
+2016-09-13 01:14:38  [ main:2017 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@27f97a17]
+2016-09-13 01:14:38  [ main:2017 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-09-13 01:14:38  [ main:2018 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-09-13 01:14:38  [ main:2018 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcResourceUrlProvider'
+2016-09-13 01:14:38  [ main:2018 ] - [ DEBUG ]  Looking for resource handler mappings
+2016-09-13 01:14:38  [ main:2019 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2016-09-13 01:14:38  [ main:2019 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+2016-09-13 01:14:38  [ main:2019 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2016-09-13 01:14:38  [ main:2019 ] - [ DEBUG ]  Found resource handler mapping: URL pattern="/img/**", locations=[class path resource [resources/upload_img]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@50ecb4ed]
+2016-09-13 01:14:38  [ main:2019 ] - [ DEBUG ]  Looking for resource handler mappings
+2016-09-13 01:14:38  [ main:2019 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2016-09-13 01:14:38  [ main:2019 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+2016-09-13 01:14:38  [ main:2019 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2016-09-13 01:14:38  [ main:2019 ] - [ DEBUG ]  Found resource handler mapping: URL pattern="/img/**", locations=[class path resource [resources/upload_img]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@50ecb4ed]
+2016-09-13 01:14:38  [ main:2020 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2016-09-13 01:14:38  [ main:2020 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2016-09-13 01:14:38  [ main:2020 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2016-09-13 01:14:38  [ main:2020 ] - [ DEBUG ]  Storing ApplicationContext in cache under key [[MergedContextConfiguration@522ef2d7 testClass = ImageServiceTest, locations = '{classpath:spring/spring-*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2016-09-13 01:14:38  [ main:2020 ] - [ DEBUG ]  Spring test ApplicationContext cache statistics: [ContextCache@54a92471 size = 1, hitCount = 0, missCount = 1, parentContextCount = 0]
+2016-09-13 01:14:38  [ main:2021 ] - [ DEBUG ]  Processing injected element of bean 'com.lzx2005.service.ImageServiceTest': AutowiredFieldElement for private com.lzx2005.service.ImageService com.lzx2005.service.ImageServiceTest.imageService
+2016-09-13 01:14:38  [ main:2022 ] - [ DEBUG ]  Returning cached instance of singleton bean 'imageServiceImpl'
+2016-09-13 01:14:38  [ main:2022 ] - [ DEBUG ]  Autowiring by type from bean name 'com.lzx2005.service.ImageServiceTest' to bean named 'imageServiceImpl'
+2016-09-13 01:14:38  [ main:2022 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-13 01:14:38  [ main:2038 ] - [ DEBUG ]  Fetching JDBC Connection from DataSource
+2016-09-13 01:14:38  [ main:2071 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-09-13 01:14:38  [ main:2072 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@5bd9e937 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-09-13 01:14:38  [ main:2073 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1669j8pkwf312g2guk|37b0e229, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1669j8pkwf312g2guk|37b0e229, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://5739e0202fa12.sh.cdb.myqcloud.com:5254/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-09-13 01:14:38  [ main:2073 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-09-13 01:14:38  [ main:2073 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-09-13 01:14:38  [ main:2073 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@5bd9e937 [managed: 0, unused: 0, excluded: 0]
+2016-09-13 01:14:38  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:2311 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@77627977.acquireResource() returning. 
+2016-09-13 01:14:38  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:2312 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@5bd9e937 [managed: 1, unused: 1, excluded: 0]
+2016-09-13 01:14:38  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:2312 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-09-13 01:14:38  [ main:2312 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@5bd9e937 [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a5b14f9)
+2016-09-13 01:14:38  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:2318 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@77627977.acquireResource() returning. 
+2016-09-13 01:14:38  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:2318 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@5bd9e937 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a5b14f9)
+2016-09-13 01:14:38  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:2318 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-09-13 01:14:38  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:2326 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@77627977.acquireResource() returning. 
+2016-09-13 01:14:38  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:2326 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@5bd9e937 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a5b14f9)
+2016-09-13 01:14:38  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:2326 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-09-13 01:14:38  [ main:2372 ] - [ DEBUG ]  Returning JDBC Connection to DataSource
+2016-09-13 01:14:38  [ main:2373 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@5bd9e937 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a5b14f9)
+2016-09-13 01:14:38  [ main:2374 ] - [ DEBUG ]  Fetching JDBC Connection from DataSource
+2016-09-13 01:14:38  [ main:2374 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@5bd9e937 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a5b14f9)
+2016-09-13 01:14:38  [ main:2405 ] - [ DEBUG ]  Returning JDBC Connection to DataSource
+2016-09-13 01:14:38  [ main:2405 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@5bd9e937 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a5b14f9)
+2016-09-13 01:14:38  [ main:2406 ] - [ DEBUG ]  After test method: context [DefaultTestContext@353e58cd testClass = ImageServiceTest, testInstance = com.lzx2005.service.ImageServiceTest@1038160a, testMethod = addImage@ImageServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@522ef2d7 testClass = ImageServiceTest, locations = '{classpath:spring/spring-*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+2016-09-13 01:14:38  [ main:2407 ] - [ DEBUG ]  After test class: context [DefaultTestContext@353e58cd testClass = ImageServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@522ef2d7 testClass = ImageServiceTest, locations = '{classpath:spring/spring-*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
+2016-09-13 01:14:38  [ Thread-1:2408 ] - [ INFO ]  Closing org.springframework.context.support.GenericApplicationContext@602f958: startup date [Tue Sep 13 01:14:37 GMT+08:00 2016]; root of context hierarchy
+2016-09-13 01:14:38  [ Thread-1:2409 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-09-13 01:14:38  [ Thread-1:2409 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-09-13 01:14:38  [ Thread-1:2409 ] - [ DEBUG ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@57c89e3c: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,blogServiceImpl,imageServiceImpl,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,adminController,indexController,adminRestfulController,org.springframework.web.servlet.config.viewControllerHandlerMapping,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.MappedInterceptor#1,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#2,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,multipartResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,blogDao,imageDao,userDao]; root of factory hierarchy
+2016-09-13 01:14:38  [ Thread-1:2410 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#75221ed7': [org.springframework.web.servlet.config.viewControllerHandlerMapping]
+2016-09-13 01:14:38  [ Thread-1:2411 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#263110c2#2': [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0]
+2016-09-13 01:14:38  [ Thread-1:2412 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#27be789c#2': [(inner bean)#6c178eb9#2]
+2016-09-13 01:14:38  [ Thread-1:2413 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#3ea97e14': [mvcUriComponentsContributor]
+2016-09-13 01:14:38  [ Thread-1:2413 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#7bb55b75#1': [(inner bean)#3ea97e14]
+2016-09-13 01:14:38  [ Thread-1:2414 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#27be789c#1': [(inner bean)#6c178eb9#1]
+2016-09-13 01:14:38  [ Thread-1:2415 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#7bb55b75': [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0]
+2016-09-13 01:14:38  [ Thread-1:2416 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#27be789c': [(inner bean)#6c178eb9]
+2016-09-13 01:14:38  [ Thread-1:2416 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#5d463027': [org.springframework.web.servlet.handler.MappedInterceptor#2]
+2016-09-13 01:14:38  [ Thread-1:2417 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#72db0d07': [(inner bean)#5d463027]
+2016-09-13 01:14:38  [ Thread-1:2417 ] - [ DEBUG ]  Retrieved dependent beans for bean 'LoginInterceptor': [org.springframework.web.servlet.handler.MappedInterceptor#1]
+2016-09-13 01:14:38  [ Thread-1:2417 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#1c7e8e6b': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+2016-09-13 01:14:38  [ Thread-1:2417 ] - [ DEBUG ]  Retrieved dependent beans for bean 'imageServiceImpl': [com.lzx2005.service.ImageServiceTest]
