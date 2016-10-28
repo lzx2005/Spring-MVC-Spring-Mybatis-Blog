@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abb12a86-865e-49de-8196-3d52479cca9f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/blog.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/web/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/web/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/css.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/css.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/custom.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/custom.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/blog.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/blog.jsp" />
     </list>
     <ignored path="lzx2005.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +39,8 @@
       <file leaf-file-name="blog.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/blog.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+            <state relative-caret-position="118">
+              <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -1911,7 +1906,7 @@
       <workItem from="1477450770248" duration="2118000" />
       <workItem from="1477534653710" duration="1223000" />
       <workItem from="1477562381455" duration="638000" />
-      <workItem from="1477614711873" duration="14073000" />
+      <workItem from="1477614711873" duration="15266000" />
     </task>
     <task id="LOCAL-00001" summary="编写SQL代码，设定Mybatis属性">
       <created>1466318435156</created>
@@ -2109,7 +2104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477622542625</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="加入Markdown解析器，并设置代码高亮">
+      <created>1477632390466</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1477632390466</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2145,7 +2147,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110124000" />
+    <option name="totallyTimeSpent" value="111317000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2204,7 +2206,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="编写SQL代码，设定Mybatis属性" />
     <MESSAGE value="编写实体类" />
     <MESSAGE value="编写DAO接口和实现，并配置Spring和Mybatis的参数" />
     <MESSAGE value="完成DAO层的编写，对UserDao进行了Junit测试" />
@@ -2229,7 +2230,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/lzx2005/lzx2005&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
     <MESSAGE value="整合Elasticsearch全文搜索" />
     <MESSAGE value="添加Markdown编辑器页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加Markdown编辑器页面" />
+    <MESSAGE value="加入Markdown解析器，并设置代码高亮" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入Markdown解析器，并设置代码高亮" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2646,8 +2648,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/blog.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        <state relative-caret-position="118">
+          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
           <folding />
         </state>
       </provider>

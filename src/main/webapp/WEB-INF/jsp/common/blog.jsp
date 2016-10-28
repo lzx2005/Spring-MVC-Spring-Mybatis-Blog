@@ -58,23 +58,16 @@
         </div><!--/.navbar-collapse -->
     </div>
 </nav>
-<%--
-<div class="jumbotron jumb-block">
-    <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a
-            jumbotron and three supporting pieces of content. Use it as a starting point to create something more
-            unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">Learn more
-            »</a></p>
-    </div>
-</div>--%>
+
 
 <div class="container top-60">
     <div class="row">
         <div class="col-md-12">
             <div class="row" id="content">
                 ${blog.content }
+                    <c:if test="${blog.markdown == 1}">
+                        ${blog.content }
+                    </c:if>
             </div>
         </div>
     </div>
