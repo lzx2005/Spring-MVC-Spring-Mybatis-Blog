@@ -2,7 +2,11 @@ package com.lzx2005.web.restfull;
 
 import com.lzx2005.dao.ImageDao;
 import com.lzx2005.dto.AjaxResult;
+import com.lzx2005.dto.ServiceResult;
+import com.lzx2005.entity.Blog;
 import com.lzx2005.entity.Image;
+import com.lzx2005.entity.User;
+import com.lzx2005.service.BlogService;
 import com.lzx2005.tool.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -32,6 +36,9 @@ public class AdminRestfulController {
 
     @Autowired
     private ImageDao imageDao;
+
+    @Autowired
+    private BlogService blogService;
 
     /**
      * 测试接口
@@ -130,4 +137,22 @@ public class AdminRestfulController {
         return result;
     }
 
+
+    @RequestMapping(
+            value = "blog/create",
+            method = RequestMethod.POST,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public AjaxResult<Blog> createBlog(HttpServletRequest res, HttpServletResponse response){
+        String title = res.getParameter("title");
+        String content = res.getParameter("content");
+        User user = (User)res.getSession().getAttribute("user");
+        String author = user.getUsername();
+        ServiceResult<Blog> result = blogService.createBlog(title, author, content, (short) 0, (short) 1);
+        if(result.isSuccess()){
+            return new AjaxResult<Blog>(true,"文章发布成功",result.getData());
+        }else{
+            return new AjaxResult<Blog>(false,"文章发布失败",null);
+        }
+    }
 }

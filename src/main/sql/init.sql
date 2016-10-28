@@ -16,10 +16,12 @@ UNIQUE(username)
 CREATE TABLE blog(
 `blog_id` bigint NOT NULL AUTO_INCREMENT COMMENT '文章ID',
 `title` VARCHAR(30) NOT NULL COMMENT '文章标题',
+`author` VARCHAR(120) NOT NULL COMMENT '文章作者',
 `content` text NOT NULL COMMENT '文章正文',
 `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
 `view` bigint NOT NULL DEFAULT 0 COMMENT '浏览量',
 `blog_type` tinyint NOT NULL DEFAULT 0 COMMENT '文章类型,普通0',
+`markdown` tinyint NOT NULL DEFAULT 0 COMMENT '是否为Markdown,不是0，是1',
 PRIMARY KEY(blog_id)
 )ENGINE=InnoDB AUTO_INCREMENT=10000 DEFAULT CHARSET=utf8 COMMENT='博客列表';
 

@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>后台主页</title>
+    <title>添加一篇文章</title>
 
     <%@include file="../layout/css.jsp"%>
     <%@include file="../layout/script.jsp"%>

@@ -115,11 +115,11 @@
                     <img class="my-avatar" src="<%=basePath%>resources/image/avatar.png">
                 </div>
                 <div>
-                    <p>姓名:李正先</p>
+                    <p>姓名:lzx2005</p>
                     <p>年龄:16</p>
-                    <p>姓名:李正先</p>
-                    <p>姓名:李正先</p>
-                    <p>姓名:李正先</p>
+                    <p>姓名:lzx2005</p>
+                    <p>姓名:lzx2005</p>
+                    <p>姓名:lzx2005</p>
 
                 </div>
             </div>

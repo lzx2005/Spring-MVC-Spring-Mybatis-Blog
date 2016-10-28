@@ -30,6 +30,11 @@ public class BlogServiceTest {
     }
 
     @Test
+    public void createBlogWithMarkdown(){
+        ServiceResult<Blog> result = blogService.createBlog("Service test markdown","lzx2005", "test", (short) 0,(short)1);
+    }
+
+    @Test
     public void getAllBlog() throws Exception {
         ServiceResult<List<Blog>> result = blogService.getAllBlog(1, 20);
         System.out.println(result);

@@ -19,7 +19,11 @@ public class BlogServiceImpl implements BlogService {
     private BlogDao blogDao;
 
     public ServiceResult<Blog> createBlog(String title, String author, String content, short blogType) {
-        int result = blogDao.insertBlog(title, author, content, blogType);
+        return createBlog(title, author, content, blogType,(short)0);
+    }
+
+    public ServiceResult<Blog> createBlog(String title, String author, String content, short blogType, short markdown) {
+        int result = blogDao.insertBlogWithMarkdown(title, author, content, blogType,markdown);
         ServiceResult<Blog> sr = null;
         Blog blog = null;
         if (result == 1) {

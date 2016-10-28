@@ -14,6 +14,10 @@ public class BlogDaoEsImpl implements BlogDao{
         return 0;
     }
 
+    public int insertBlogWithMarkdown(@Param("title") String title, @Param("author") String author, @Param("content") String content, @Param("blogType") short blogType, @Param("markdown") short markdown) {
+        return 0;
+    }
+
     public Blog queryById(long blogId) {
         return null;
     }

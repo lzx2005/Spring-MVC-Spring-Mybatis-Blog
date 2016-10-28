@@ -12,6 +12,8 @@ public interface BlogService {
 
     public ServiceResult<Blog> createBlog(String title, String author, String content, short blogType);
 
+    public ServiceResult<Blog> createBlog(String title, String author, String content, short blogType,short markdown);
+
     public ServiceResult<List<Blog>> getAllBlog(int page, int pageSize);
 
     public ServiceResult<Blog> getBlog(long blogId);

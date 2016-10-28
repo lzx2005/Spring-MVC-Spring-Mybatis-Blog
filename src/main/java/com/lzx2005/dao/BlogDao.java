@@ -11,6 +11,8 @@ import java.util.List;
 public interface BlogDao {
     public int insertBlog(@Param("title") String title,@Param("author") String author,@Param("content") String content,@Param("blogType") short blogType);
 
+    public int insertBlogWithMarkdown(@Param("title") String title,@Param("author") String author,@Param("content") String content,@Param("blogType") short blogType,@Param("markdown") short markdown);
+
     public Blog queryById(long blogId);
 
     public List<Blog> findAll(@Param("offset") int offset,@Param("limit") int limit);

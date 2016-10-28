@@ -28,6 +28,11 @@ public class BlogDaoTest {
     }
 
     @Test
+    public void insertBlogWithMarkdown(){
+        int resule = blogDao.insertBlogWithMarkdown("测试标题WithMarkdown","lzx2005","测试内容",(short)0,(short) 1);
+    }
+
+    @Test
     public void queryById() throws Exception {
         Blog blog = blogDao.queryById(10000);
         System.out.println(blog);

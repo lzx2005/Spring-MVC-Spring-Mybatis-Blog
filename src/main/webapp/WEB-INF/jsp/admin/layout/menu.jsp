@@ -10,7 +10,7 @@
     </ul>
     <ul class="nav nav-sidebar">
         <li><a href="<%=basePath%>admin/blog">博文管理</a></li>
-        <li <c:if test="${actionName=='/admin/blog_add'}">class="active"</c:if>><a href="<%=basePath%>admin/blog_add">写文章</a></li>
+        <li <c:if test="${actionName=='/admin/blog_add_markdown'}">class="active"</c:if>><a href="<%=basePath%>admin/blog_add_markdown">写文章</a></li>
         <%--<li><a href="http://v3.bootcss.com/examples/dashboard/">One more nav</a></li>
         <li><a href="http://v3.bootcss.com/examples/dashboard/">Another nav item</a></li>
         <li><a href="http://v3.bootcss.com/examples/dashboard/">More navigation</a></li>--%>

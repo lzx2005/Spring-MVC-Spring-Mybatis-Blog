@@ -1,7 +1,6 @@
 package com.lzx2005.dao.elasticsearch;
 
 import com.lzx2005.dao.elasticsearch.repository.UserRepository;
-import com.lzx2005.entity.Blog;
 import com.lzx2005.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring/spring-data-elasticsearch.xml"})
+@ContextConfiguration({"classpath:spring-data-elasticsearch.xml"})
 public class ElasticsearchTest {
 
     @Autowired

@@ -1,814 +1,475 @@
-2016-10-24 15:55:08  [ main:0 ] - [ INFO ]  [Micromax] modules [], plugins [], sites []
-2016-10-24 15:55:08  [ main:132 ] - [ DEBUG ]  [Micromax] creating thread_pool [generic], type [cached], keep_alive [30s]
-2016-10-24 15:55:08  [ main:137 ] - [ DEBUG ]  [Micromax] creating thread_pool [index], type [fixed], size [4], queue_size [200]
-2016-10-24 15:55:08  [ main:139 ] - [ DEBUG ]  [Micromax] creating thread_pool [fetch_shard_store], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 15:55:08  [ main:140 ] - [ DEBUG ]  [Micromax] creating thread_pool [get], type [fixed], size [4], queue_size [1k]
-2016-10-24 15:55:08  [ main:140 ] - [ DEBUG ]  [Micromax] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:55:08  [ main:140 ] - [ DEBUG ]  [Micromax] creating thread_pool [force_merge], type [fixed], size [1], queue_size [null]
-2016-10-24 15:55:08  [ main:140 ] - [ DEBUG ]  [Micromax] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
-2016-10-24 15:55:08  [ main:141 ] - [ DEBUG ]  [Micromax] creating thread_pool [bulk], type [fixed], size [4], queue_size [50]
-2016-10-24 15:55:08  [ main:141 ] - [ DEBUG ]  [Micromax] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:55:08  [ main:141 ] - [ DEBUG ]  [Micromax] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:55:08  [ main:141 ] - [ DEBUG ]  [Micromax] creating thread_pool [search], type [fixed], size [7], queue_size [1k]
-2016-10-24 15:55:08  [ main:141 ] - [ DEBUG ]  [Micromax] creating thread_pool [fetch_shard_started], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 15:55:08  [ main:141 ] - [ DEBUG ]  [Micromax] creating thread_pool [listener], type [fixed], size [2], queue_size [null]
-2016-10-24 15:55:08  [ main:141 ] - [ DEBUG ]  [Micromax] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
-2016-10-24 15:55:08  [ main:141 ] - [ DEBUG ]  [Micromax] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
-2016-10-24 15:55:08  [ main:141 ] - [ DEBUG ]  [Micromax] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:55:09  [ main:740 ] - [ DEBUG ]  configuration:
-
-lo
-        Software Loopback Interface 1
-        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
-        inet6 ::1 prefixlen:128 scope:host
-        hardware 
-        UP MULTICAST LOOPBACK mtu:-1 index:1
-
-net0
-        Microsoft Teredo Tunneling Adapter
-        inet6 2001:0:9d38:6ab8:4c5:f2d3:8514:2a34 prefixlen:0
-        inet6 fe80::4c5:f2d3:8514:2a34 prefixlen:32 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        UP POINTOPOINT mtu:1280 index:2
-
-net1
-        Microsoft ISATAP Adapter #2
-        inet6 fe80::5efe:c0a8:e301 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:3
-
-eth0
-        VMware Virtual Ethernet Adapter for VMnet8
-        inet 192.168.157.1 netmask:255.255.255.0 broadcast:192.168.157.255 scope:site
-        inet6 fe80::bcaa:b0e8:b25c:355a prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:08
-        UP MULTICAST mtu:1500 index:4
-
-eth1
-        Realtek PCIe GBE Family Controller
-        MULTICAST mtu:-1 index:5
-
-eth2
-        Realtek PCIe GBE Family Controller #2
-        inet 10.1.2.236 netmask:255.255.255.0 broadcast:10.1.2.255 scope:site
-        inet6 fe80::94b3:31e6:269a:dd12 prefixlen:64 scope:link
-        hardware 2C:56:DC:4E:2C:E5
-        UP MULTICAST mtu:1500 index:6
-
-eth3
-        Microsoft Kernel Debug Network Adapter
-        MULTICAST mtu:-1 index:7
-
-eth4
-        VMware Virtual Ethernet Adapter for VMnet1
-        inet 192.168.227.1 netmask:255.255.255.0 broadcast:192.168.227.255 scope:site
-        inet6 fe80::a912:3799:b73c:ddb3 prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:01
-        UP MULTICAST mtu:1500 index:8
-
-net2
-        Microsoft ISATAP Adapter
-        inet6 fe80::5efe:c0a8:9d01 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:9
-
-net3
-        Microsoft ISATAP Adapter #3
-        inet6 fe80::5efe:a01:2ec prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:10
-
-eth5
-        Realtek PCIe GBE Family Controller #2-WFP Native MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:11
-
-eth6
-        Realtek PCIe GBE Family Controller #2-QoS Packet Scheduler-0000
-        MULTICAST mtu:-1 index:12
-
-eth7
-        Realtek PCIe GBE Family Controller #2-WFP 802.3 MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:13
-
-2016-10-24 15:55:09  [ main:761 ] - [ DEBUG ]  using gathering [true]
-2016-10-24 15:55:09  [ main:776 ] - [ DEBUG ]  [Micromax] node_sampler_interval[5s]
-2016-10-24 15:55:09  [ main:802 ] - [ DEBUG ]  Using select timeout of 500
-2016-10-24 15:55:09  [ main:802 ] - [ DEBUG ]  Epoll-bug workaround enabled = false
-2016-10-24 15:55:09  [ main:833 ] - [ DEBUG ]  [Micromax] adding address [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 15:55:09  [ elasticsearch[Micromax][management][T#1]:857 ] - [ DEBUG ]  [Micromax] connected to node [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 15:55:09  [ main:909 ] - [ WARN ]  [Micromax] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 15:55:14  [ elasticsearch[Micromax][generic][T#1]:5779 ] - [ WARN ]  [Micromax] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 15:55:45  [ main:0 ] - [ INFO ]  [Warwolves] modules [], plugins [], sites []
-2016-10-24 15:55:46  [ main:113 ] - [ DEBUG ]  [Warwolves] creating thread_pool [generic], type [cached], keep_alive [30s]
-2016-10-24 15:55:46  [ main:119 ] - [ DEBUG ]  [Warwolves] creating thread_pool [index], type [fixed], size [4], queue_size [200]
-2016-10-24 15:55:46  [ main:121 ] - [ DEBUG ]  [Warwolves] creating thread_pool [fetch_shard_store], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [get], type [fixed], size [4], queue_size [1k]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [force_merge], type [fixed], size [1], queue_size [null]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [bulk], type [fixed], size [4], queue_size [50]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [search], type [fixed], size [7], queue_size [1k]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [fetch_shard_started], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 15:55:46  [ main:122 ] - [ DEBUG ]  [Warwolves] creating thread_pool [listener], type [fixed], size [2], queue_size [null]
-2016-10-24 15:55:46  [ main:123 ] - [ DEBUG ]  [Warwolves] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
-2016-10-24 15:55:46  [ main:123 ] - [ DEBUG ]  [Warwolves] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
-2016-10-24 15:55:46  [ main:123 ] - [ DEBUG ]  [Warwolves] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:55:46  [ main:610 ] - [ DEBUG ]  configuration:
-
-lo
-        Software Loopback Interface 1
-        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
-        inet6 ::1 prefixlen:128 scope:host
-        hardware 
-        UP MULTICAST LOOPBACK mtu:-1 index:1
-
-net0
-        Microsoft Teredo Tunneling Adapter
-        inet6 2001:0:9d38:6ab8:4c5:f2d3:8514:2a34 prefixlen:0
-        inet6 fe80::4c5:f2d3:8514:2a34 prefixlen:32 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        UP POINTOPOINT mtu:1280 index:2
-
-net1
-        Microsoft ISATAP Adapter #2
-        inet6 fe80::5efe:c0a8:e301 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:3
-
-eth0
-        VMware Virtual Ethernet Adapter for VMnet8
-        inet 192.168.157.1 netmask:255.255.255.0 broadcast:192.168.157.255 scope:site
-        inet6 fe80::bcaa:b0e8:b25c:355a prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:08
-        UP MULTICAST mtu:1500 index:4
-
-eth1
-        Realtek PCIe GBE Family Controller
-        MULTICAST mtu:-1 index:5
-
-eth2
-        Realtek PCIe GBE Family Controller #2
-        inet 10.1.2.236 netmask:255.255.255.0 broadcast:10.1.2.255 scope:site
-        inet6 fe80::94b3:31e6:269a:dd12 prefixlen:64 scope:link
-        hardware 2C:56:DC:4E:2C:E5
-        UP MULTICAST mtu:1500 index:6
-
-eth3
-        Microsoft Kernel Debug Network Adapter
-        MULTICAST mtu:-1 index:7
-
-eth4
-        VMware Virtual Ethernet Adapter for VMnet1
-        inet 192.168.227.1 netmask:255.255.255.0 broadcast:192.168.227.255 scope:site
-        inet6 fe80::a912:3799:b73c:ddb3 prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:01
-        UP MULTICAST mtu:1500 index:8
-
-net2
-        Microsoft ISATAP Adapter
-        inet6 fe80::5efe:c0a8:9d01 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:9
-
-net3
-        Microsoft ISATAP Adapter #3
-        inet6 fe80::5efe:a01:2ec prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:10
-
-eth5
-        Realtek PCIe GBE Family Controller #2-WFP Native MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:11
-
-eth6
-        Realtek PCIe GBE Family Controller #2-QoS Packet Scheduler-0000
-        MULTICAST mtu:-1 index:12
-
-eth7
-        Realtek PCIe GBE Family Controller #2-WFP 802.3 MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:13
-
-2016-10-24 15:55:46  [ main:630 ] - [ DEBUG ]  using gathering [true]
-2016-10-24 15:55:46  [ main:645 ] - [ DEBUG ]  [Warwolves] node_sampler_interval[5s]
-2016-10-24 15:55:46  [ main:662 ] - [ DEBUG ]  Using select timeout of 500
-2016-10-24 15:55:46  [ main:662 ] - [ DEBUG ]  Epoll-bug workaround enabled = false
-2016-10-24 15:55:46  [ main:693 ] - [ DEBUG ]  [Warwolves] adding address [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 15:55:46  [ elasticsearch[Warwolves][management][T#1]:717 ] - [ DEBUG ]  [Warwolves] connected to node [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 15:55:46  [ main:767 ] - [ WARN ]  [Warwolves] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 15:55:46  [ main:767 ] - [ DEBUG ]  [Warwolves] adding address [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 15:55:46  [ elasticsearch[Warwolves][management][T#1]:768 ] - [ DEBUG ]  [Warwolves] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 15:55:51  [ elasticsearch[Warwolves][generic][T#2]:5805 ] - [ INFO ]  [Warwolves] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [2] timed out after [5001ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 15:55:51  [ elasticsearch[Warwolves][generic][T#2]:5807 ] - [ DEBUG ]  [Warwolves] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 15:55:51  [ main:5809 ] - [ WARN ]  [Warwolves] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 15:55:51  [ elasticsearch[Warwolves][management][T#2]:5810 ] - [ DEBUG ]  [Warwolves] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 15:55:56  [ elasticsearch[Warwolves][generic][T#2]:10812 ] - [ INFO ]  [Warwolves] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [4] timed out after [5001ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 15:55:56  [ elasticsearch[Warwolves][generic][T#2]:10812 ] - [ DEBUG ]  [Warwolves] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 15:55:56  [ elasticsearch[Warwolves][generic][T#1]:10812 ] - [ WARN ]  [Warwolves] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 15:55:56  [ main:10822 ] - [ DEBUG ]  [Warwolves] disconnecting from [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}] due to explicit disconnect call
-2016-10-24 15:59:34  [ main:0 ] - [ INFO ]  [General Orwell Taylor] modules [], plugins [], sites []
-2016-10-24 15:59:34  [ main:114 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [generic], type [cached], keep_alive [30s]
-2016-10-24 15:59:34  [ main:120 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [index], type [fixed], size [4], queue_size [200]
-2016-10-24 15:59:34  [ main:121 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [fetch_shard_store], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 15:59:34  [ main:122 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [get], type [fixed], size [4], queue_size [1k]
-2016-10-24 15:59:34  [ main:122 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:59:34  [ main:122 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [force_merge], type [fixed], size [1], queue_size [null]
-2016-10-24 15:59:34  [ main:122 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
-2016-10-24 15:59:34  [ main:123 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [bulk], type [fixed], size [4], queue_size [50]
-2016-10-24 15:59:34  [ main:123 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:59:34  [ main:123 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:59:34  [ main:123 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [search], type [fixed], size [7], queue_size [1k]
-2016-10-24 15:59:34  [ main:123 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [fetch_shard_started], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 15:59:34  [ main:123 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [listener], type [fixed], size [2], queue_size [null]
-2016-10-24 15:59:34  [ main:123 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
-2016-10-24 15:59:34  [ main:123 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
-2016-10-24 15:59:34  [ main:123 ] - [ DEBUG ]  [General Orwell Taylor] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 15:59:35  [ main:613 ] - [ DEBUG ]  configuration:
-
-lo
-        Software Loopback Interface 1
-        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
-        inet6 ::1 prefixlen:128 scope:host
-        hardware 
-        UP MULTICAST LOOPBACK mtu:-1 index:1
-
-net0
-        Microsoft Teredo Tunneling Adapter
-        inet6 2001:0:9d38:6ab8:4c5:f2d3:8514:2a34 prefixlen:0
-        inet6 fe80::4c5:f2d3:8514:2a34 prefixlen:32 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        UP POINTOPOINT mtu:1280 index:2
-
-net1
-        Microsoft ISATAP Adapter #2
-        inet6 fe80::5efe:c0a8:e301 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:3
-
-eth0
-        VMware Virtual Ethernet Adapter for VMnet8
-        inet 192.168.157.1 netmask:255.255.255.0 broadcast:192.168.157.255 scope:site
-        inet6 fe80::bcaa:b0e8:b25c:355a prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:08
-        UP MULTICAST mtu:1500 index:4
-
-eth1
-        Realtek PCIe GBE Family Controller
-        MULTICAST mtu:-1 index:5
-
-eth2
-        Realtek PCIe GBE Family Controller #2
-        inet 10.1.2.236 netmask:255.255.255.0 broadcast:10.1.2.255 scope:site
-        inet6 fe80::94b3:31e6:269a:dd12 prefixlen:64 scope:link
-        hardware 2C:56:DC:4E:2C:E5
-        UP MULTICAST mtu:1500 index:6
-
-eth3
-        Microsoft Kernel Debug Network Adapter
-        MULTICAST mtu:-1 index:7
-
-eth4
-        VMware Virtual Ethernet Adapter for VMnet1
-        inet 192.168.227.1 netmask:255.255.255.0 broadcast:192.168.227.255 scope:site
-        inet6 fe80::a912:3799:b73c:ddb3 prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:01
-        UP MULTICAST mtu:1500 index:8
-
-net2
-        Microsoft ISATAP Adapter
-        inet6 fe80::5efe:c0a8:9d01 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:9
-
-net3
-        Microsoft ISATAP Adapter #3
-        inet6 fe80::5efe:a01:2ec prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:10
-
-eth5
-        Realtek PCIe GBE Family Controller #2-WFP Native MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:11
-
-eth6
-        Realtek PCIe GBE Family Controller #2-QoS Packet Scheduler-0000
-        MULTICAST mtu:-1 index:12
-
-eth7
-        Realtek PCIe GBE Family Controller #2-WFP 802.3 MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:13
-
-2016-10-24 15:59:35  [ main:633 ] - [ DEBUG ]  using gathering [true]
-2016-10-24 15:59:35  [ main:648 ] - [ DEBUG ]  [General Orwell Taylor] node_sampler_interval[5s]
-2016-10-24 15:59:35  [ main:665 ] - [ DEBUG ]  Using select timeout of 500
-2016-10-24 15:59:35  [ main:665 ] - [ DEBUG ]  Epoll-bug workaround enabled = false
-2016-10-24 15:59:35  [ main:702 ] - [ DEBUG ]  [General Orwell Taylor] adding address [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 15:59:35  [ elasticsearch[General Orwell Taylor][management][T#1]:725 ] - [ DEBUG ]  [General Orwell Taylor] connected to node [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 15:59:35  [ main:774 ] - [ WARN ]  [General Orwell Taylor] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 15:59:35  [ main:775 ] - [ DEBUG ]  [General Orwell Taylor] adding address [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 15:59:35  [ elasticsearch[General Orwell Taylor][management][T#1]:775 ] - [ DEBUG ]  [General Orwell Taylor] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 15:59:40  [ elasticsearch[General Orwell Taylor][generic][T#2]:5813 ] - [ INFO ]  [General Orwell Taylor] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [2] timed out after [5000ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 15:59:40  [ elasticsearch[General Orwell Taylor][generic][T#2]:5815 ] - [ DEBUG ]  [General Orwell Taylor] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 15:59:40  [ main:5817 ] - [ WARN ]  [General Orwell Taylor] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 15:59:40  [ elasticsearch[General Orwell Taylor][management][T#2]:5819 ] - [ DEBUG ]  [General Orwell Taylor] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 15:59:45  [ elasticsearch[General Orwell Taylor][generic][T#2]:10822 ] - [ INFO ]  [General Orwell Taylor] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [4] timed out after [5000ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 15:59:45  [ elasticsearch[General Orwell Taylor][generic][T#2]:10822 ] - [ DEBUG ]  [General Orwell Taylor] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 15:59:45  [ elasticsearch[General Orwell Taylor][generic][T#1]:10822 ] - [ WARN ]  [General Orwell Taylor] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 15:59:45  [ main:10823 ] - [ DEBUG ]  [General Orwell Taylor] disconnecting from [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}] due to explicit disconnect call
-2016-10-24 17:27:03  [ main:0 ] - [ INFO ]  [Grog the God-Crusher] modules [], plugins [], sites []
-2016-10-24 17:27:03  [ main:144 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [generic], type [cached], keep_alive [30s]
-2016-10-24 17:27:03  [ main:150 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [index], type [fixed], size [4], queue_size [200]
-2016-10-24 17:27:03  [ main:151 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [fetch_shard_store], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 17:27:03  [ main:152 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [get], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:27:03  [ main:152 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:27:03  [ main:152 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [force_merge], type [fixed], size [1], queue_size [null]
-2016-10-24 17:27:03  [ main:152 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:27:03  [ main:153 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [bulk], type [fixed], size [4], queue_size [50]
-2016-10-24 17:27:03  [ main:153 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:27:03  [ main:153 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:27:03  [ main:153 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [search], type [fixed], size [7], queue_size [1k]
-2016-10-24 17:27:03  [ main:153 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [fetch_shard_started], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 17:27:03  [ main:153 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [listener], type [fixed], size [2], queue_size [null]
-2016-10-24 17:27:03  [ main:153 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:27:03  [ main:153 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
-2016-10-24 17:27:03  [ main:153 ] - [ DEBUG ]  [Grog the God-Crusher] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:27:03  [ main:635 ] - [ DEBUG ]  configuration:
-
-lo
-        Software Loopback Interface 1
-        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
-        inet6 ::1 prefixlen:128 scope:host
-        hardware 
-        UP MULTICAST LOOPBACK mtu:-1 index:1
-
-net0
-        Microsoft Teredo Tunneling Adapter
-        inet6 2001:0:9d38:6ab8:4c5:f2d3:8514:2a34 prefixlen:0
-        inet6 fe80::4c5:f2d3:8514:2a34 prefixlen:32 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        UP POINTOPOINT mtu:1280 index:2
-
-net1
-        Microsoft ISATAP Adapter #2
-        inet6 fe80::5efe:c0a8:e301 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:3
-
-eth0
-        VMware Virtual Ethernet Adapter for VMnet8
-        inet 192.168.157.1 netmask:255.255.255.0 broadcast:192.168.157.255 scope:site
-        inet6 fe80::bcaa:b0e8:b25c:355a prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:08
-        UP MULTICAST mtu:1500 index:4
-
-eth1
-        Realtek PCIe GBE Family Controller
-        MULTICAST mtu:-1 index:5
-
-eth2
-        Realtek PCIe GBE Family Controller #2
-        inet 10.1.2.236 netmask:255.255.255.0 broadcast:10.1.2.255 scope:site
-        inet6 fe80::94b3:31e6:269a:dd12 prefixlen:64 scope:link
-        hardware 2C:56:DC:4E:2C:E5
-        UP MULTICAST mtu:1500 index:6
-
-eth3
-        Microsoft Kernel Debug Network Adapter
-        MULTICAST mtu:-1 index:7
-
-eth4
-        VMware Virtual Ethernet Adapter for VMnet1
-        inet 192.168.227.1 netmask:255.255.255.0 broadcast:192.168.227.255 scope:site
-        inet6 fe80::a912:3799:b73c:ddb3 prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:01
-        UP MULTICAST mtu:1500 index:8
-
-net2
-        Microsoft ISATAP Adapter
-        inet6 fe80::5efe:c0a8:9d01 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:9
-
-net3
-        Microsoft ISATAP Adapter #3
-        inet6 fe80::5efe:a01:2ec prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:10
-
-eth5
-        Realtek PCIe GBE Family Controller #2-WFP Native MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:11
-
-eth6
-        Realtek PCIe GBE Family Controller #2-QoS Packet Scheduler-0000
-        MULTICAST mtu:-1 index:12
-
-eth7
-        Realtek PCIe GBE Family Controller #2-WFP 802.3 MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:13
-
-2016-10-24 17:27:03  [ main:655 ] - [ DEBUG ]  using gathering [true]
-2016-10-24 17:27:03  [ main:670 ] - [ DEBUG ]  [Grog the God-Crusher] node_sampler_interval[5s]
-2016-10-24 17:27:03  [ main:687 ] - [ DEBUG ]  Using select timeout of 500
-2016-10-24 17:27:03  [ main:687 ] - [ DEBUG ]  Epoll-bug workaround enabled = false
-2016-10-24 17:27:03  [ main:718 ] - [ DEBUG ]  [Grog the God-Crusher] adding address [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 17:27:03  [ elasticsearch[Grog the God-Crusher][management][T#1]:740 ] - [ DEBUG ]  [Grog the God-Crusher] connected to node [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 17:27:04  [ main:790 ] - [ WARN ]  [Grog the God-Crusher] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:27:04  [ main:790 ] - [ DEBUG ]  [Grog the God-Crusher] adding address [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:27:04  [ elasticsearch[Grog the God-Crusher][management][T#1]:791 ] - [ DEBUG ]  [Grog the God-Crusher] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:27:09  [ elasticsearch[Grog the God-Crusher][generic][T#2]:5829 ] - [ INFO ]  [Grog the God-Crusher] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [2] timed out after [5001ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 17:27:09  [ elasticsearch[Grog the God-Crusher][generic][T#2]:5830 ] - [ DEBUG ]  [Grog the God-Crusher] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 17:27:09  [ main:5832 ] - [ WARN ]  [Grog the God-Crusher] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:27:09  [ elasticsearch[Grog the God-Crusher][management][T#2]:5834 ] - [ DEBUG ]  [Grog the God-Crusher] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:27:14  [ elasticsearch[Grog the God-Crusher][generic][T#2]:10835 ] - [ INFO ]  [Grog the God-Crusher] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [4] timed out after [5001ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 17:27:14  [ elasticsearch[Grog the God-Crusher][generic][T#2]:10835 ] - [ DEBUG ]  [Grog the God-Crusher] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 17:27:14  [ elasticsearch[Grog the God-Crusher][generic][T#1]:10836 ] - [ WARN ]  [Grog the God-Crusher] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:27:14  [ Thread-1:10836 ] - [ DEBUG ]  [Grog the God-Crusher] disconnecting from [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}] due to explicit disconnect call
-2016-10-24 17:31:46  [ main:0 ] - [ INFO ]  [Bevatron] modules [], plugins [], sites []
-2016-10-24 17:31:46  [ main:121 ] - [ DEBUG ]  [Bevatron] creating thread_pool [generic], type [cached], keep_alive [30s]
-2016-10-24 17:31:46  [ main:127 ] - [ DEBUG ]  [Bevatron] creating thread_pool [index], type [fixed], size [4], queue_size [200]
-2016-10-24 17:31:46  [ main:129 ] - [ DEBUG ]  [Bevatron] creating thread_pool [fetch_shard_store], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 17:31:46  [ main:129 ] - [ DEBUG ]  [Bevatron] creating thread_pool [get], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [force_merge], type [fixed], size [1], queue_size [null]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [bulk], type [fixed], size [4], queue_size [50]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [search], type [fixed], size [7], queue_size [1k]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [fetch_shard_started], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [listener], type [fixed], size [2], queue_size [null]
-2016-10-24 17:31:46  [ main:130 ] - [ DEBUG ]  [Bevatron] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:31:46  [ main:131 ] - [ DEBUG ]  [Bevatron] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
-2016-10-24 17:31:46  [ main:131 ] - [ DEBUG ]  [Bevatron] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:31:47  [ main:618 ] - [ DEBUG ]  configuration:
-
-lo
-        Software Loopback Interface 1
-        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
-        inet6 ::1 prefixlen:128 scope:host
-        hardware 
-        UP MULTICAST LOOPBACK mtu:-1 index:1
-
-net0
-        Microsoft Teredo Tunneling Adapter
-        inet6 2001:0:9d38:6ab8:4c5:f2d3:8514:2a34 prefixlen:0
-        inet6 fe80::4c5:f2d3:8514:2a34 prefixlen:32 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        UP POINTOPOINT mtu:1280 index:2
-
-net1
-        Microsoft ISATAP Adapter #2
-        inet6 fe80::5efe:c0a8:e301 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:3
-
-eth0
-        VMware Virtual Ethernet Adapter for VMnet8
-        inet 192.168.157.1 netmask:255.255.255.0 broadcast:192.168.157.255 scope:site
-        inet6 fe80::bcaa:b0e8:b25c:355a prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:08
-        UP MULTICAST mtu:1500 index:4
-
-eth1
-        Realtek PCIe GBE Family Controller
-        MULTICAST mtu:-1 index:5
-
-eth2
-        Realtek PCIe GBE Family Controller #2
-        inet 10.1.2.236 netmask:255.255.255.0 broadcast:10.1.2.255 scope:site
-        inet6 fe80::94b3:31e6:269a:dd12 prefixlen:64 scope:link
-        hardware 2C:56:DC:4E:2C:E5
-        UP MULTICAST mtu:1500 index:6
-
-eth3
-        Microsoft Kernel Debug Network Adapter
-        MULTICAST mtu:-1 index:7
-
-eth4
-        VMware Virtual Ethernet Adapter for VMnet1
-        inet 192.168.227.1 netmask:255.255.255.0 broadcast:192.168.227.255 scope:site
-        inet6 fe80::a912:3799:b73c:ddb3 prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:01
-        UP MULTICAST mtu:1500 index:8
-
-net2
-        Microsoft ISATAP Adapter
-        inet6 fe80::5efe:c0a8:9d01 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:9
-
-net3
-        Microsoft ISATAP Adapter #3
-        inet6 fe80::5efe:a01:2ec prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:10
-
-eth5
-        Realtek PCIe GBE Family Controller #2-WFP Native MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:11
-
-eth6
-        Realtek PCIe GBE Family Controller #2-QoS Packet Scheduler-0000
-        MULTICAST mtu:-1 index:12
-
-eth7
-        Realtek PCIe GBE Family Controller #2-WFP 802.3 MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:13
-
-2016-10-24 17:31:47  [ main:638 ] - [ DEBUG ]  using gathering [true]
-2016-10-24 17:31:47  [ main:652 ] - [ DEBUG ]  [Bevatron] node_sampler_interval[5s]
-2016-10-24 17:31:47  [ main:669 ] - [ DEBUG ]  Using select timeout of 500
-2016-10-24 17:31:47  [ main:669 ] - [ DEBUG ]  Epoll-bug workaround enabled = false
-2016-10-24 17:31:47  [ main:699 ] - [ DEBUG ]  [Bevatron] adding address [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 17:31:47  [ elasticsearch[Bevatron][management][T#1]:722 ] - [ DEBUG ]  [Bevatron] connected to node [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 17:31:47  [ main:771 ] - [ WARN ]  [Bevatron] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:31:47  [ main:772 ] - [ DEBUG ]  [Bevatron] adding address [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:31:47  [ elasticsearch[Bevatron][management][T#1]:773 ] - [ DEBUG ]  [Bevatron] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:31:52  [ elasticsearch[Bevatron][generic][T#2]:5811 ] - [ INFO ]  [Bevatron] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [2] timed out after [5001ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 17:31:52  [ elasticsearch[Bevatron][generic][T#2]:5814 ] - [ DEBUG ]  [Bevatron] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 17:31:52  [ main:5816 ] - [ WARN ]  [Bevatron] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:31:52  [ elasticsearch[Bevatron][management][T#2]:5818 ] - [ DEBUG ]  [Bevatron] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:31:57  [ elasticsearch[Bevatron][generic][T#2]:10819 ] - [ INFO ]  [Bevatron] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [3] timed out after [5001ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 17:31:57  [ elasticsearch[Bevatron][generic][T#2]:10819 ] - [ DEBUG ]  [Bevatron] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 17:31:57  [ elasticsearch[Bevatron][generic][T#1]:10821 ] - [ WARN ]  [Bevatron] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:31:57  [ main:10822 ] - [ DEBUG ]  [Bevatron] disconnecting from [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}] due to explicit disconnect call
-2016-10-24 17:55:47  [ main:0 ] - [ INFO ]  [Stacy X] modules [], plugins [], sites []
-2016-10-24 17:55:47  [ main:137 ] - [ DEBUG ]  [Stacy X] creating thread_pool [generic], type [cached], keep_alive [30s]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [index], type [fixed], size [4], queue_size [200]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [fetch_shard_store], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [get], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [force_merge], type [fixed], size [1], queue_size [null]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [bulk], type [fixed], size [4], queue_size [50]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [search], type [fixed], size [7], queue_size [1k]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [fetch_shard_started], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [listener], type [fixed], size [2], queue_size [null]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
-2016-10-24 17:55:47  [ main:153 ] - [ DEBUG ]  [Stacy X] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:55:47  [ main:659 ] - [ DEBUG ]  configuration:
-
-lo
-        Software Loopback Interface 1
-        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
-        inet6 ::1 prefixlen:128 scope:host
-        hardware 
-        UP MULTICAST LOOPBACK mtu:-1 index:1
-
-net0
-        Microsoft Teredo Tunneling Adapter
-        inet6 2001:0:9d38:6ab8:4c5:f2d3:8514:2a34 prefixlen:0
-        inet6 fe80::4c5:f2d3:8514:2a34 prefixlen:32 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        UP POINTOPOINT mtu:1280 index:2
-
-net1
-        Microsoft ISATAP Adapter #2
-        inet6 fe80::5efe:c0a8:e301 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:3
-
-eth0
-        VMware Virtual Ethernet Adapter for VMnet8
-        inet 192.168.157.1 netmask:255.255.255.0 broadcast:192.168.157.255 scope:site
-        inet6 fe80::bcaa:b0e8:b25c:355a prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:08
-        UP MULTICAST mtu:1500 index:4
-
-eth1
-        Realtek PCIe GBE Family Controller
-        MULTICAST mtu:-1 index:5
-
-eth2
-        Realtek PCIe GBE Family Controller #2
-        inet 10.1.2.236 netmask:255.255.255.0 broadcast:10.1.2.255 scope:site
-        inet6 fe80::94b3:31e6:269a:dd12 prefixlen:64 scope:link
-        hardware 2C:56:DC:4E:2C:E5
-        UP MULTICAST mtu:1500 index:6
-
-eth3
-        Microsoft Kernel Debug Network Adapter
-        MULTICAST mtu:-1 index:7
-
-eth4
-        VMware Virtual Ethernet Adapter for VMnet1
-        inet 192.168.227.1 netmask:255.255.255.0 broadcast:192.168.227.255 scope:site
-        inet6 fe80::a912:3799:b73c:ddb3 prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:01
-        UP MULTICAST mtu:1500 index:8
-
-net2
-        Microsoft ISATAP Adapter
-        inet6 fe80::5efe:c0a8:9d01 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:9
-
-net3
-        Microsoft ISATAP Adapter #3
-        inet6 fe80::5efe:a01:2ec prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:10
-
-eth5
-        Realtek PCIe GBE Family Controller #2-WFP Native MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:11
-
-eth6
-        Realtek PCIe GBE Family Controller #2-QoS Packet Scheduler-0000
-        MULTICAST mtu:-1 index:12
-
-eth7
-        Realtek PCIe GBE Family Controller #2-WFP 802.3 MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:13
-
-2016-10-24 17:55:47  [ main:667 ] - [ DEBUG ]  using gathering [true]
-2016-10-24 17:55:47  [ main:683 ] - [ DEBUG ]  [Stacy X] node_sampler_interval[5s]
-2016-10-24 17:55:47  [ main:699 ] - [ DEBUG ]  Using select timeout of 500
-2016-10-24 17:55:47  [ main:699 ] - [ DEBUG ]  Epoll-bug workaround enabled = false
-2016-10-24 17:55:47  [ main:731 ] - [ DEBUG ]  [Stacy X] adding address [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 17:55:47  [ elasticsearch[Stacy X][management][T#1]:764 ] - [ DEBUG ]  [Stacy X] connected to node [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 17:55:48  [ main:817 ] - [ WARN ]  [Stacy X] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:55:48  [ main:817 ] - [ DEBUG ]  [Stacy X] adding address [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:55:48  [ elasticsearch[Stacy X][management][T#1]:818 ] - [ DEBUG ]  [Stacy X] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:55:53  [ elasticsearch[Stacy X][generic][T#1]:5869 ] - [ INFO ]  [Stacy X] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [2] timed out after [5012ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 17:55:53  [ elasticsearch[Stacy X][generic][T#1]:5871 ] - [ DEBUG ]  [Stacy X] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 17:55:53  [ main:5872 ] - [ WARN ]  [Stacy X] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:55:53  [ elasticsearch[Stacy X][management][T#2]:5874 ] - [ DEBUG ]  [Stacy X] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:55:58  [ elasticsearch[Stacy X][generic][T#1]:10875 ] - [ INFO ]  [Stacy X] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [4] timed out after [5001ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 17:55:58  [ elasticsearch[Stacy X][generic][T#1]:10875 ] - [ DEBUG ]  [Stacy X] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 17:55:58  [ elasticsearch[Stacy X][generic][T#2]:10875 ] - [ WARN ]  [Stacy X] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:55:58  [ main:10876 ] - [ DEBUG ]  [Stacy X] disconnecting from [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}] due to explicit disconnect call
-2016-10-24 17:58:52  [ main:0 ] - [ INFO ]  [Fallen One] modules [], plugins [], sites []
-2016-10-24 17:58:53  [ main:116 ] - [ DEBUG ]  [Fallen One] creating thread_pool [generic], type [cached], keep_alive [30s]
-2016-10-24 17:58:53  [ main:121 ] - [ DEBUG ]  [Fallen One] creating thread_pool [index], type [fixed], size [4], queue_size [200]
-2016-10-24 17:58:53  [ main:123 ] - [ DEBUG ]  [Fallen One] creating thread_pool [fetch_shard_store], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 17:58:53  [ main:124 ] - [ DEBUG ]  [Fallen One] creating thread_pool [get], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:58:53  [ main:124 ] - [ DEBUG ]  [Fallen One] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:58:53  [ main:124 ] - [ DEBUG ]  [Fallen One] creating thread_pool [force_merge], type [fixed], size [1], queue_size [null]
-2016-10-24 17:58:53  [ main:124 ] - [ DEBUG ]  [Fallen One] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:58:53  [ main:125 ] - [ DEBUG ]  [Fallen One] creating thread_pool [bulk], type [fixed], size [4], queue_size [50]
-2016-10-24 17:58:53  [ main:125 ] - [ DEBUG ]  [Fallen One] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:58:53  [ main:125 ] - [ DEBUG ]  [Fallen One] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:58:53  [ main:125 ] - [ DEBUG ]  [Fallen One] creating thread_pool [search], type [fixed], size [7], queue_size [1k]
-2016-10-24 17:58:53  [ main:125 ] - [ DEBUG ]  [Fallen One] creating thread_pool [fetch_shard_started], type [scaling], min [1], size [8], keep_alive [5m]
-2016-10-24 17:58:53  [ main:125 ] - [ DEBUG ]  [Fallen One] creating thread_pool [listener], type [fixed], size [2], queue_size [null]
-2016-10-24 17:58:53  [ main:125 ] - [ DEBUG ]  [Fallen One] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
-2016-10-24 17:58:53  [ main:126 ] - [ DEBUG ]  [Fallen One] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
-2016-10-24 17:58:53  [ main:126 ] - [ DEBUG ]  [Fallen One] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
-2016-10-24 17:58:53  [ main:616 ] - [ DEBUG ]  configuration:
-
-lo
-        Software Loopback Interface 1
-        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
-        inet6 ::1 prefixlen:128 scope:host
-        hardware 
-        UP MULTICAST LOOPBACK mtu:-1 index:1
-
-net0
-        Microsoft Teredo Tunneling Adapter
-        inet6 2001:0:9d38:6ab8:4c5:f2d3:8514:2a34 prefixlen:0
-        inet6 fe80::4c5:f2d3:8514:2a34 prefixlen:32 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        UP POINTOPOINT mtu:1280 index:2
-
-net1
-        Microsoft ISATAP Adapter #2
-        inet6 fe80::5efe:c0a8:e301 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:3
-
-eth0
-        VMware Virtual Ethernet Adapter for VMnet8
-        inet 192.168.157.1 netmask:255.255.255.0 broadcast:192.168.157.255 scope:site
-        inet6 fe80::bcaa:b0e8:b25c:355a prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:08
-        UP MULTICAST mtu:1500 index:4
-
-eth1
-        Realtek PCIe GBE Family Controller
-        MULTICAST mtu:-1 index:5
-
-eth2
-        Realtek PCIe GBE Family Controller #2
-        inet 10.1.2.236 netmask:255.255.255.0 broadcast:10.1.2.255 scope:site
-        inet6 fe80::94b3:31e6:269a:dd12 prefixlen:64 scope:link
-        hardware 2C:56:DC:4E:2C:E5
-        UP MULTICAST mtu:1500 index:6
-
-eth3
-        Microsoft Kernel Debug Network Adapter
-        MULTICAST mtu:-1 index:7
-
-eth4
-        VMware Virtual Ethernet Adapter for VMnet1
-        inet 192.168.227.1 netmask:255.255.255.0 broadcast:192.168.227.255 scope:site
-        inet6 fe80::a912:3799:b73c:ddb3 prefixlen:64 scope:link
-        hardware 00:50:56:C0:00:01
-        UP MULTICAST mtu:1500 index:8
-
-net2
-        Microsoft ISATAP Adapter
-        inet6 fe80::5efe:c0a8:9d01 prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:9
-
-net3
-        Microsoft ISATAP Adapter #3
-        inet6 fe80::5efe:a01:2ec prefixlen:128 scope:link
-        hardware 00:00:00:00:00:00:00:E0
-        POINTOPOINT mtu:1280 index:10
-
-eth5
-        Realtek PCIe GBE Family Controller #2-WFP Native MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:11
-
-eth6
-        Realtek PCIe GBE Family Controller #2-QoS Packet Scheduler-0000
-        MULTICAST mtu:-1 index:12
-
-eth7
-        Realtek PCIe GBE Family Controller #2-WFP 802.3 MAC Layer LightWeight Filter-0000
-        MULTICAST mtu:-1 index:13
-
-2016-10-24 17:58:53  [ main:636 ] - [ DEBUG ]  using gathering [true]
-2016-10-24 17:58:53  [ main:652 ] - [ DEBUG ]  [Fallen One] node_sampler_interval[5s]
-2016-10-24 17:58:53  [ main:669 ] - [ DEBUG ]  Using select timeout of 500
-2016-10-24 17:58:53  [ main:669 ] - [ DEBUG ]  Epoll-bug workaround enabled = false
-2016-10-24 17:58:53  [ main:703 ] - [ DEBUG ]  [Fallen One] adding address [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 17:58:53  [ elasticsearch[Fallen One][management][T#1]:726 ] - [ DEBUG ]  [Fallen One] connected to node [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}]
-2016-10-24 17:58:53  [ main:776 ] - [ WARN ]  [Fallen One] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:58:53  [ main:776 ] - [ DEBUG ]  [Fallen One] adding address [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:58:53  [ elasticsearch[Fallen One][management][T#1]:777 ] - [ DEBUG ]  [Fallen One] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:58:58  [ elasticsearch[Fallen One][generic][T#2]:5814 ] - [ INFO ]  [Fallen One] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [2] timed out after [5000ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 17:58:58  [ elasticsearch[Fallen One][generic][T#2]:5816 ] - [ DEBUG ]  [Fallen One] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 17:58:58  [ main:5818 ] - [ WARN ]  [Fallen One] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:58:58  [ elasticsearch[Fallen One][management][T#2]:5819 ] - [ DEBUG ]  [Fallen One] connected to node [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}]
-2016-10-24 17:59:03  [ elasticsearch[Fallen One][generic][T#2]:10820 ] - [ INFO ]  [Fallen One] failed to get local cluster state for {#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}, disconnecting...
-ReceiveTimeoutTransportException[[][localhost/127.0.0.1:9200][cluster:monitor/state] request_id [4] timed out after [5000ms]]
-	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2016-10-24 17:59:03  [ elasticsearch[Fallen One][generic][T#2]:10820 ] - [ DEBUG ]  [Fallen One] disconnecting from [{#transport#-2}{127.0.0.1}{localhost/127.0.0.1:9200}] due to explicit disconnect call
-2016-10-24 17:59:03  [ elasticsearch[Fallen One][generic][T#1]:10821 ] - [ WARN ]  [Fallen One] node null not part of the cluster Cluster [elasticsearch], ignoring...
-2016-10-24 17:59:03  [ main:10821 ] - [ DEBUG ]  [Fallen One] disconnecting from [{#transport#-1}{127.0.0.1}{localhost/127.0.0.1:9300}] due to explicit disconnect call
+2016-10-28 09:51:35  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 09:51:35  [ main:223 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 09:51:35  [ main:243 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2hr0502vz1c2|b354d59] registered.
+2016-10-28 09:51:36  [ main:982 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@422f985 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 09:51:36  [ main:986 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2hr0502vz1c2|b354d59, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2hr0502vz1c2|b354d59, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 09:51:36  [ main:986 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 09:51:36  [ main:986 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 09:51:36  [ main:986 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1323 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1323 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1323 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1324 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1324 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1324 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1324 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 09:51:36  [ main:1324 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1324 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1324 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1333 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1333 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1333 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1339 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1339 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1339 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1340 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1340 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1340 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1346 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1346 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1347 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1349 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1349 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1349 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1354 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1354 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1354 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 09:51:36  [ main:1363 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3 handling a throwable.
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'author' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.Util.getInstance(Util.java:372)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy16.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy12.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.insertBlog(Unknown Source)
+	at com.lzx2005.dao.BlogDaoTest.insertBlog(BlogDaoTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:117)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:262)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1365 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1365 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1365 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 09:51:36  [ main:1365 ] - [ DEBUG ]  Attempted to convert SQLException to SQLException. Leaving it alone. [SQLState: 42S22; errorCode: 1054]
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'author' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.Util.getInstance(Util.java:372)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy16.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy12.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.insertBlog(Unknown Source)
+	at com.lzx2005.dao.BlogDaoTest.insertBlog(BlogDaoTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:117)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:262)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+2016-10-28 09:51:36  [ main:1366 ] - [ DEBUG ]  Testing a Connection in response to an Exception:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'author' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.Util.getInstance(Util.java:372)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy16.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy12.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.insertBlog(Unknown Source)
+	at com.lzx2005.dao.BlogDaoTest.insertBlog(BlogDaoTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:117)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:262)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+2016-10-28 09:51:36  [ main:1371 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ main:1419 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ main:1423 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ main:1423 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewProxyConnection@7d48ba6f: close() called more than once.
+2016-10-28 10:00:51  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 10:00:51  [ main:154 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 10:00:51  [ main:183 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2i2wxy137mam1|b354d59] registered.
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 10:00:51  [ main:597 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2i2wxy137mam1|b354d59, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2i2wxy137mam1|b354d59, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 10:00:51  [ main:597 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 10:00:51  [ main:597 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 10:00:51  [ main:597 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:767 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:767 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:767 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:767 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 10:00:52  [ main:767 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:767 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:767 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:767 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:767 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:767 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:775 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:776 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:776 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:776 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:776 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:776 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:783 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:783 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:783 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:784 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:784 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:784 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:786 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:786 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:786 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:789 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:789 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:789 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:791 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:791 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:791 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 10:00:52  [ main:871 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:06:13  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 10:06:14  [ main:309 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 10:06:14  [ main:339 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2i9tvpjx4xp4|356fde16] registered.
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 10:06:14  [ main:710 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2i9tvpjx4xp4|356fde16, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2i9tvpjx4xp4|356fde16, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 10:06:14  [ main:710 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 10:06:14  [ main:710 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 10:06:14  [ main:710 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:874 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:874 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:874 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:874 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:874 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:874 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:874 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 10:06:14  [ main:874 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:874 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:875 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:884 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:884 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:884 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:885 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:885 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:885 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:885 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:885 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:885 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:892 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:893 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:893 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:893 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:893 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:893 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:897 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:897 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:897 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:899 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:899 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:899 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 10:06:14  [ main:968 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:31:04  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 10:31:04  [ main:211 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 10:31:04  [ main:232 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2j5s911nyzh0m|11173763] registered.
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@422f985 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 10:31:05  [ main:652 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2j5s911nyzh0m|11173763, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2j5s911nyzh0m|11173763, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:817 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:817 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:817 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:817 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:817 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:817 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:817 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:817 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 10:31:05  [ main:817 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:817 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:829 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:829 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:829 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:829 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:829 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:829 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:835 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:835 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:835 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:838 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:838 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:838 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:839 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:839 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:840 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:845 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:845 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:845 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:855 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:855 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:855 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 10:31:05  [ main:901 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:35:52  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 10:35:52  [ main:156 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 10:35:52  [ main:175 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2jbyfr1apuxl0|7ad894be] registered.
+2016-10-28 10:35:53  [ main:1078 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 10:35:53  [ main:1078 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@47119f5 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 10:35:53  [ main:1079 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2jbyfr1apuxl0|7ad894be, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2jbyfr1apuxl0|7ad894be, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 10:35:53  [ main:1080 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1228 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1228 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1228 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1229 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1229 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1229 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1229 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 10:35:53  [ main:1229 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1229 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1230 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1237 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1237 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1237 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1238 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1238 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1238 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1261 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1261 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1261 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1261 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1261 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1261 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1267 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1267 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1267 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1269 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1269 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1270 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1272 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1273 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1273 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 10:35:54  [ main:1333 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)

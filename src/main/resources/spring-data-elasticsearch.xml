@@ -14,5 +14,4 @@
     <elasticsearch:repositories base-package="com.lzx2005.dao.elasticsearch.repository"/>
     <jpa:repositories base-package="com.lzx2005.dao.elasticsearch.repository"/>
 
-    <bean name=""></bean>
 </beans>
