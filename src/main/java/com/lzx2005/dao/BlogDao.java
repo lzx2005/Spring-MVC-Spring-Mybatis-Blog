@@ -3,6 +3,7 @@ package com.lzx2005.dao;
 import com.lzx2005.entity.Blog;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,5 +16,5 @@ public interface BlogDao {
 
     public Blog queryById(long blogId);
 
-    public List<Blog> findAll(@Param("offset") int offset,@Param("limit") int limit);
+    public ArrayList<Blog> findAll(@Param("offset") int offset, @Param("limit") int limit);
 }

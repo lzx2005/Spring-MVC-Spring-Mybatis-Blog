@@ -4,6 +4,7 @@ import com.lzx2005.dao.BlogDao;
 import com.lzx2005.entity.Blog;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,7 +23,7 @@ public class BlogDaoEsImpl implements BlogDao{
         return null;
     }
 
-    public List<Blog> findAll(@Param("offset") int offset, @Param("limit") int limit) {
+    public ArrayList<Blog> findAll(@Param("offset") int offset, @Param("limit") int limit) {
         return null;
     }
 }

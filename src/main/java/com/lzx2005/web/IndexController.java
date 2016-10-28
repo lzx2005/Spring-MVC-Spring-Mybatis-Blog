@@ -1,11 +1,13 @@
 package com.lzx2005.web;
 
 import com.lzx2005.dto.AjaxResult;
+import com.lzx2005.dto.PageResult;
 import com.lzx2005.dto.ServiceResult;
 import com.lzx2005.entity.Blog;
 import com.lzx2005.entity.User;
 import com.lzx2005.service.BlogService;
 import com.lzx2005.service.UserService;
+import com.lzx2005.tool.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,9 +35,10 @@ public class IndexController {
      * @param model
      * @return String
      */
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model){
-        System.out.println("访问首页");
+        ServiceResult<PageResult<Blog>> blogs = blogService.getAllBlog(1, 10);
+        model.addAttribute("blogs",blogs);
         return "common/index";
     }
 

@@ -71,9 +71,7 @@
 <div class="jumbotron jumb-block">
     <div class="container">
         <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a
-            jumbotron and three supporting pieces of content. Use it as a starting point to create something more
-            unique.</p>
+        <p>${blogs }</p>
         <p><a class="btn btn-primary btn-lg" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">Learn more
             »</a></p>
     </div>
@@ -87,23 +85,20 @@
 
             <div class="row">
 
-                <c:forEach begin="1" end="10" varStatus="status">
+                <c:forEach var="item" items="${blogs.data.list }" varStatus="status">
                     <div class="col-md-12 blog-block">
-                        <h2>Heading <c:out value="${status.index}"/></h2>
+                        <h2>${item.title }</h2>
                         <div class="font1">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> admin
-                            <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2015.8.6</span>
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${item.author }
+                            <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> ${item.createTime}</span>
                         </div>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                            mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                            magna mollis euismod. Donec sed odio dui. </p>
+                        <p></p>
                         <p>
-                            <a class="btn btn-default" href="#" role="button">View details »</a>
-                            <a class="btn btn-primary" href="#" role="button">See More</a>
-                            <a class="btn btn-danger" href="#" role="button">Delete</a>
+                            <a class="btn btn-default" href="<%=basePath%>/blog/${item.blogId}/overview" role="button">View details »</a>
+                            <%--<a class="btn btn-primary" href="#" role="button">See More</a>
+                            <a class="btn btn-danger" href="#" role="button">Delete</a>--%>
                         </p>
                     </div>
-
                 </c:forEach>
             </div>
 

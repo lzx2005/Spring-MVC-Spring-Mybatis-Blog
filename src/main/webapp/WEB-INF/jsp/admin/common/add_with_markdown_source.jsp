@@ -36,7 +36,7 @@
                 <div class="form-group">
                     <label class="col-sm-1 control-label">Markdown：</label>
                     <div class="col-sm-11">
-                        <textarea class="form-control" rows="10" id="content" name="content">#Markdown Source Here</textarea>
+                        <textarea class="form-control" rows="10" id="content" name="content">## Markdown Source Here</textarea>
                     </div>
                 </div>
 

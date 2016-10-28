@@ -1,5 +1,6 @@
 package com.lzx2005.service;
 
+import com.lzx2005.dto.PageResult;
 import com.lzx2005.dto.ServiceResult;
 import com.lzx2005.entity.Blog;
 
@@ -14,7 +15,7 @@ public interface BlogService {
 
     public ServiceResult<Blog> createBlog(String title, String author, String content, short blogType,short markdown);
 
-    public ServiceResult<List<Blog>> getAllBlog(int page, int pageSize);
+    public ServiceResult<PageResult<Blog>> getAllBlog(int page, int pageSize);
 
     public ServiceResult<Blog> getBlog(long blogId);
 }

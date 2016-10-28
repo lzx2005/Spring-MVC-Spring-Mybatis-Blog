@@ -1,5 +1,6 @@
 package com.lzx2005.service;
 
+import com.lzx2005.dto.PageResult;
 import com.lzx2005.dto.ServiceResult;
 import com.lzx2005.entity.Blog;
 import org.junit.Test;
@@ -36,9 +37,9 @@ public class BlogServiceTest {
 
     @Test
     public void getAllBlog() throws Exception {
-        ServiceResult<List<Blog>> result = blogService.getAllBlog(1, 20);
+        ServiceResult<PageResult<Blog>> result = blogService.getAllBlog(1, 20);
         System.out.println(result);
-        for(Blog blog : result.getData()){
+        for(Blog blog : result.getData().getList()){
             System.out.println(blog);
         }
     }

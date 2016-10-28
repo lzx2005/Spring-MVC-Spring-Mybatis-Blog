@@ -1,12 +1,14 @@
 package com.lzx2005.service.impl;
 
 import com.lzx2005.dao.BlogDao;
+import com.lzx2005.dto.PageResult;
 import com.lzx2005.dto.ServiceResult;
 import com.lzx2005.entity.Blog;
 import com.lzx2005.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -34,12 +36,15 @@ public class BlogServiceImpl implements BlogService {
         return sr;
     }
 
-    public ServiceResult<List<Blog>> getAllBlog(int page, int pageSize) {
+    public ServiceResult<PageResult<Blog>> getAllBlog(int page, int pageSize) {
+        PageResult<Blog> pageResult = new PageResult<Blog>();
+        pageResult.setCurPage(page);
+        pageResult.setPageSize(pageSize);
         int offset = (page - 1) * pageSize;
         int limit = pageSize;
-        List<Blog> blogs = blogDao.findAll(offset, limit);
-        ServiceResult<List<Blog>> sr = new ServiceResult<List<Blog>>(true, blogs);
-        return sr;
+        ArrayList<Blog> blogs = blogDao.findAll(offset, limit);
+        pageResult.setList(blogs);
+        return new ServiceResult<PageResult<Blog>>(true,pageResult);
     }
 
     public ServiceResult<Blog> getBlog(long blogId) {
