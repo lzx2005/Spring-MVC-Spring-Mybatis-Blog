@@ -1,7 +1,7 @@
 
 /* 初始化一些样式 */
 body{
-    background-color: #e5f0e5;
+    background-color: #f7f7f7;
 }
 
 button{
@@ -47,10 +47,14 @@ input{
 }
 
 .footer{
+    width:100%;
     background-color: #222;
     margin: 0px;
     padding: 10px;
     color: white;
+    position: fixed !important;
+    bottom: 0px;
+    position: absolute;
 }
 
 .end-text{
@@ -62,3 +66,19 @@ input{
 .btn-primary{
     background-color: #66afe9 !important;
 }*/
+
+.top-60{
+    margin-top: 60px;
+}
+
+
+/*
+markdown美化
+*/
+.markdown-body {
+    padding: 45px;
+}
+
+pre{
+    background-color: #FFFFFF !important;
+}

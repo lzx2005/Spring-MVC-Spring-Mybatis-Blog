@@ -14,6 +14,8 @@ public class Blog {
     private long view;
     private short blogType;
 
+    private short markdown;
+
     public long getBlogId() {
         return blogId;
     }
@@ -70,6 +72,14 @@ public class Blog {
         this.author = author;
     }
 
+    public short getMarkdown() {
+        return markdown;
+    }
+
+    public void setMarkdown(short markdown) {
+        this.markdown = markdown;
+    }
+
     @Override
     public String toString() {
         return "Blog{" +
@@ -80,6 +90,7 @@ public class Blog {
                 ", createTime=" + createTime +
                 ", view=" + view +
                 ", blogType=" + blogType +
+                ", markdown=" + markdown +
                 '}';
     }
 }

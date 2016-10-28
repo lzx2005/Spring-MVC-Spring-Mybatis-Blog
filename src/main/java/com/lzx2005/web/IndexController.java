@@ -2,7 +2,9 @@ package com.lzx2005.web;
 
 import com.lzx2005.dto.AjaxResult;
 import com.lzx2005.dto.ServiceResult;
+import com.lzx2005.entity.Blog;
 import com.lzx2005.entity.User;
+import com.lzx2005.service.BlogService;
 import com.lzx2005.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,6 +26,8 @@ public class IndexController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private BlogService blogService;
     /**
      * 首页
      * @param model
@@ -34,6 +38,21 @@ public class IndexController {
         System.out.println("访问首页");
         return "common/index";
     }
+
+
+    @RequestMapping(value = "/blog/{blogId}/overview", method = RequestMethod.GET)
+    public String blogOverview(@PathVariable("blogId")long blogId,Model model){
+        ServiceResult<Blog> result = blogService.getBlog(blogId);
+        if(result.isSuccess()){
+            //查找成功
+            model.addAttribute(result.getData());
+            return "common/blog";
+        }else{
+            //查找失败
+            return "redirect:/";
+        }
+    }
+
 
 
     /**

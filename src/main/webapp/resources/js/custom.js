@@ -43,7 +43,7 @@ var tool = {
 
 var loginScript = {
     URL: {
-        loginSubUrl: tool.getBaseUrl() + "login_sub",
+        loginSubUrl: "/login_sub",
     },
     beforeSubmit: function () {
         var username = $("#username").val();
