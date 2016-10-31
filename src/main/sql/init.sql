@@ -17,6 +17,7 @@ CREATE TABLE blog(
 `blog_id` bigint NOT NULL AUTO_INCREMENT COMMENT '文章ID',
 `title` VARCHAR(30) NOT NULL COMMENT '文章标题',
 `author` VARCHAR(120) NOT NULL COMMENT '文章作者',
+`description` VARCHAR(120) NOT NULL COMMENT '文章描述',
 `content` text NOT NULL COMMENT '文章正文',
 `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
 `view` bigint NOT NULL DEFAULT 0 COMMENT '浏览量',

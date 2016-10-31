@@ -34,6 +34,12 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="title" class="col-sm-1 control-label">描述：</label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" id="desc" placeholder="请输入描述" name="desc">
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="col-sm-1 control-label">Markdown：</label>
                     <div class="col-sm-11">
                         <textarea class="form-control" rows="10" id="content" name="content">## Markdown Source Here</textarea>
@@ -53,14 +59,18 @@
     function saveBlog() {
         var title = $("#title").val();
         var content = $("#content").val();
+        var desc = $("#desc").val();
         if(title==""){
             alert("请填写博客标题");
-        }else if(content==""){
+        }else if(content=="") {
             alert("请填写Markdown内容");
+        }else if(desc==""){
+            alert("请填写描述内容");
         }else{
             $.post("<%=basePath%>admin_restful/blog/create", {
                 title : title,
                 content : content,
+                desc : desc,
             }, function(data, status) {
                 console.log(data);
                 if(data['success']==true){

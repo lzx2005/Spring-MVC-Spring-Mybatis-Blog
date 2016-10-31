@@ -4,13 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lzx2005.dao.BlogDao">
     <insert id="insertBlog">
-        INSERT INTO `blog` (title,author,content,blog_type)
-        VALUES (#{title},#{author},#{content},#{blogType})
+        INSERT INTO `blog` (title,author,description,content,blog_type)
+        VALUES (#{title},#{author},#{description},#{content},#{blogType})
     </insert>
 
     <insert id="insertBlogWithMarkdown">
-        INSERT INTO `blog` (title,author,content,blog_type,markdown)
-        VALUES (#{title},#{author},#{content},#{blogType},#{markdown})
+        INSERT INTO `blog` (title,author,description,content,blog_type,markdown)
+        VALUES (#{title},#{author},#{description},#{content},#{blogType},#{markdown})
     </insert>
     <select id="queryById" resultType="com.lzx2005.entity.Blog">
         SELECT * FROM `blog` WHERE blog_id = #{blogId}

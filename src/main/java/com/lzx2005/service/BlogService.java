@@ -11,9 +11,9 @@ import java.util.List;
  */
 public interface BlogService {
 
-    public ServiceResult<Blog> createBlog(String title, String author, String content, short blogType);
+    public ServiceResult<Blog> createBlog(String title, String author,String desc, String content, short blogType);
 
-    public ServiceResult<Blog> createBlog(String title, String author, String content, short blogType,short markdown);
+    public ServiceResult<Blog> createBlog(String title, String author,String desc, String content, short blogType,short markdown);
 
     public ServiceResult<PageResult<Blog>> getAllBlog(int page, int pageSize);
 

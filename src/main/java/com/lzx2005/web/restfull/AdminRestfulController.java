@@ -8,6 +8,7 @@ import com.lzx2005.entity.Image;
 import com.lzx2005.entity.User;
 import com.lzx2005.service.BlogService;
 import com.lzx2005.tool.Log;
+import com.lzx2005.tool.StrTool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -146,13 +147,19 @@ public class AdminRestfulController {
     public AjaxResult<Blog> createBlog(HttpServletRequest res, HttpServletResponse response){
         String title = res.getParameter("title");
         String content = res.getParameter("content");
+        String desc = res.getParameter("desc");
+
+        if(!StrTool.allIsNotNull(title,content,desc)){
+            return new AjaxResult<Blog>(false,"缺少参数",null);
+        }
+
         User user = (User)res.getSession().getAttribute("user");
         String author = user.getUsername();
-        ServiceResult<Blog> result = blogService.createBlog(title, author, content, (short) 0, (short) 1);
+        ServiceResult<Blog> result = blogService.createBlog(title, author,desc, content, (short) 0, (short) 1);
         if(result.isSuccess()){
             return new AjaxResult<Blog>(true,"文章发布成功",result.getData());
         }else{
-            return new AjaxResult<Blog>(false,"文章发布失败",null);
+            return new AjaxResult<Blog>(false,result.getErrorMsg(),null);
         }
     }
 }

@@ -11,11 +11,12 @@ import java.util.List;
  * Created by Administrator on 2016/10/24 0024.
  */
 public class BlogDaoEsImpl implements BlogDao{
-    public int insertBlog(@Param("title") String title, @Param("author") String author, @Param("content") String content, @Param("blogType") short blogType) {
+
+    public int insertBlog(@Param("title") String title, @Param("author") String author, @Param("author") String desc, @Param("content") String content, @Param("blogType") short blogType) {
         return 0;
     }
 
-    public int insertBlogWithMarkdown(@Param("title") String title, @Param("author") String author, @Param("content") String content, @Param("blogType") short blogType, @Param("markdown") short markdown) {
+    public int insertBlogWithMarkdown(@Param("title") String title, @Param("author") String author, @Param("author") String desc, @Param("content") String content, @Param("blogType") short blogType, @Param("markdown") short markdown) {
         return 0;
     }
 

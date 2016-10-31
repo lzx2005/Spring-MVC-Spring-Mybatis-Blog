@@ -10,6 +10,7 @@ public class Blog {
     private String title;
     private String content;
     private String author;
+    private String description;
     private Date createTime;
     private long view;
     private short blogType;
@@ -80,6 +81,14 @@ public class Blog {
         this.markdown = markdown;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     @Override
     public String toString() {
         return "Blog{" +
@@ -87,6 +96,7 @@ public class Blog {
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", author='" + author + '\'' +
+                ", description='" + description + '\'' +
                 ", createTime=" + createTime +
                 ", view=" + view +
                 ", blogType=" + blogType +

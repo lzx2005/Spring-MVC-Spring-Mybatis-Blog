@@ -1,0 +1,677 @@
+2016-10-28 09:51:35  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 09:51:35  [ main:223 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 09:51:35  [ main:243 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2hr0502vz1c2|b354d59] registered.
+2016-10-28 09:51:36  [ main:982 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 09:51:36  [ main:983 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@422f985 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 09:51:36  [ main:986 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2hr0502vz1c2|b354d59, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2hr0502vz1c2|b354d59, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 09:51:36  [ main:986 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 09:51:36  [ main:986 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 09:51:36  [ main:986 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1323 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1323 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1323 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1324 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1324 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1324 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1324 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 09:51:36  [ main:1324 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1324 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1324 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1333 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1333 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1333 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1339 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1339 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1339 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1340 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1340 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1340 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1346 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1346 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1347 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1349 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1349 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1349 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1354 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1354 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1354 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 09:51:36  [ main:1363 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3 handling a throwable.
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'author' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.Util.getInstance(Util.java:372)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy16.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy12.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.insertBlog(Unknown Source)
+	at com.lzx2005.dao.BlogDaoTest.insertBlog(BlogDaoTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:117)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:262)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1365 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@79877662.acquireResource() returning. 
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1365 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1365 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 09:51:36  [ main:1365 ] - [ DEBUG ]  Attempted to convert SQLException to SQLException. Leaving it alone. [SQLState: 42S22; errorCode: 1054]
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'author' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.Util.getInstance(Util.java:372)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy16.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy12.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.insertBlog(Unknown Source)
+	at com.lzx2005.dao.BlogDaoTest.insertBlog(BlogDaoTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:117)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:262)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+2016-10-28 09:51:36  [ main:1366 ] - [ DEBUG ]  Testing a Connection in response to an Exception:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'author' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.Util.getInstance(Util.java:372)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy16.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy12.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.insertBlog(Unknown Source)
+	at com.lzx2005.dao.BlogDaoTest.insertBlog(BlogDaoTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:117)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:262)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+2016-10-28 09:51:36  [ main:1371 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ main:1419 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ main:1423 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@433f2da3)
+2016-10-28 09:51:36  [ main:1423 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewProxyConnection@7d48ba6f: close() called more than once.
+2016-10-28 10:00:51  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 10:00:51  [ main:154 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 10:00:51  [ main:183 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2i2wxy137mam1|b354d59] registered.
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 10:00:51  [ main:596 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 10:00:51  [ main:597 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2i2wxy137mam1|b354d59, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2i2wxy137mam1|b354d59, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 10:00:51  [ main:597 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 10:00:51  [ main:597 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 10:00:51  [ main:597 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:767 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:767 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:767 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:767 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 10:00:52  [ main:767 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:767 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:767 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:767 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:767 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:767 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:775 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:776 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:776 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:776 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:776 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:776 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:783 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:783 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:783 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:784 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:784 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:784 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:786 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:786 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:786 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:789 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:789 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:789 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:791 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1c5877ac.acquireResource() returning. 
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:791 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:00:52  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:791 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 10:00:52  [ main:871 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@142b8ce2 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18c4074f)
+2016-10-28 10:06:13  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 10:06:14  [ main:309 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 10:06:14  [ main:339 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2i9tvpjx4xp4|356fde16] registered.
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 10:06:14  [ main:709 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 10:06:14  [ main:710 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2i9tvpjx4xp4|356fde16, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2i9tvpjx4xp4|356fde16, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 10:06:14  [ main:710 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 10:06:14  [ main:710 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 10:06:14  [ main:710 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:874 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:874 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:874 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:874 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:874 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:874 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:874 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 10:06:14  [ main:874 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:874 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:875 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:884 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:884 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:884 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:885 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:885 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:885 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:885 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:885 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:885 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:892 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:893 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:893 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:893 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:893 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:893 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:897 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:897 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:897 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:899 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dbbe03c.acquireResource() returning. 
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:899 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:06:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:899 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 10:06:14  [ main:968 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@61b51fe5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5cb7c1d2)
+2016-10-28 10:31:04  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 10:31:04  [ main:211 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 10:31:04  [ main:232 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2j5s911nyzh0m|11173763] registered.
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 10:31:05  [ main:651 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@422f985 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 10:31:05  [ main:652 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2j5s911nyzh0m|11173763, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2j5s911nyzh0m|11173763, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 10:31:05  [ main:652 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:817 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:817 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:817 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:817 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:817 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:817 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:817 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:817 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 10:31:05  [ main:817 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:817 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:829 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:829 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:829 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:829 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:829 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:829 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:835 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:835 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:835 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:838 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:838 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:838 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:839 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:839 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:840 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:845 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:845 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:845 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:855 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@30f4def0.acquireResource() returning. 
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:855 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:31:05  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:855 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 10:31:05  [ main:901 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@422f985 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e820d7)
+2016-10-28 10:35:52  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 10:35:52  [ main:156 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 10:35:52  [ main:175 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2jbyfr1apuxl0|7ad894be] registered.
+2016-10-28 10:35:53  [ main:1078 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 10:35:53  [ main:1078 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@47119f5 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 10:35:53  [ main:1079 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2jbyfr1apuxl0|7ad894be, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2jbyfr1apuxl0|7ad894be, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 10:35:53  [ main:1079 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 10:35:53  [ main:1080 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1228 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1228 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1228 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1229 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1229 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1229 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1229 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 10:35:53  [ main:1229 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1229 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1230 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1237 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1237 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1237 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1238 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1238 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1238 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1261 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1261 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1261 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1261 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1261 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1261 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1267 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1267 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1267 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1269 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1269 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1270 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1272 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@50ae0624.acquireResource() returning. 
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1273 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 10:35:53  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1273 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 10:35:54  [ main:1333 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@47119f5 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7055aede)
+2016-10-28 14:28:12  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 14:28:12  [ main:94 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 14:28:12  [ main:116 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2rmqoi1ydman5|313e6479] registered.
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 14:28:13  [ main:1045 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@23d8058b config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 14:28:13  [ main:1046 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2rmqoi1ydman5|313e6479, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2rmqoi1ydman5|313e6479, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 14:28:13  [ main:1046 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 14:28:13  [ main:1046 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 14:28:13  [ main:1046 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 0, unused: 0, excluded: 0]
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1197 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1197 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1197 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1197 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 1, unused: 1, excluded: 0]
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1197 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1197 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1197 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 14:28:13  [ main:1198 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1198 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1198 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1205 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1205 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1205 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1219 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1219 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1219 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1222 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1222 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1222 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1224 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1224 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1224 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1231 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1231 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1231 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1233 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1233 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1234 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1234 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1f5b492b.acquireResource() returning. 
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1234 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1234 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 14:28:14  [ main:1255 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@23d8058b [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6ef85f2d)
+2016-10-28 14:28:29  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 14:28:29  [ main:108 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 14:28:29  [ main:126 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2rn3j620yr2z|118eb9f] registered.
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 14:28:30  [ main:1050 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 14:28:30  [ main:1051 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2rn3j620yr2z|118eb9f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2rn3j620yr2z|118eb9f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 14:28:30  [ main:1051 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 14:28:30  [ main:1051 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 14:28:30  [ main:1051 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1200 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1200 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1200 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1201 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1201 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1201 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1201 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 14:28:30  [ main:1201 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1201 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1201 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1208 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1209 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1209 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1213 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1213 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1213 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1216 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1216 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1216 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1219 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1219 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1219 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1236 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1236 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1236 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1238 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1238 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1238 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5574b9f8.acquireResource() returning. 
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1238 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1238 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1238 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 14:28:30  [ main:1285 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@739c99f1 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@dbe6efa)
+2016-10-28 14:28:30  [ main:1285 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewProxyConnection@4f81a7e4: close() called more than once.
+2016-10-28 14:41:38  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 14:41:38  [ main:102 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 14:41:38  [ main:124 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2s4093159i20b|118eb9f] registered.
+2016-10-28 14:41:39  [ main:992 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 14:41:39  [ main:992 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 14:41:39  [ main:992 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 14:41:39  [ main:992 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 14:41:39  [ main:992 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 14:41:39  [ main:992 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 14:41:39  [ main:992 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 14:41:39  [ main:992 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 14:41:39  [ main:993 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 14:41:39  [ main:993 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 14:41:39  [ main:993 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@17d83571 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 14:41:39  [ main:993 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2s4093159i20b|118eb9f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2s4093159i20b|118eb9f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 14:41:39  [ main:993 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 14:41:39  [ main:993 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 14:41:39  [ main:993 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1154 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1154 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1154 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1154 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1154 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1154 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1154 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ main:1155 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1155 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1155 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1162 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1162 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1162 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1167 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1167 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1167 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1171 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1171 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1171 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1173 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1173 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1173 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1177 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1177 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1177 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1178 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1178 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1178 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1179 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@66036e58.acquireResource() returning. 
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1179 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:41:39  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1179 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 14:41:39  [ main:1220 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@75089e03)
+2016-10-28 14:47:19  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2016-10-28 14:47:19  [ main:128 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2016-10-28 14:47:19  [ main:148 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rxcz09k2sbbgv5l7vtg|12203775] registered.
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 1
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 2
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 3
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 4
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 5
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 6
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 7
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 8
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 9
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  incremented pending_acquires: 10
+2016-10-28 14:47:20  [ main:1030 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@17d83571 config: [start -> 3; min -> 10; max -> 30; inc -> 3; num_acq_attempts -> 5; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2016-10-28 14:47:20  [ main:1031 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 5, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rxcz09k2sbbgv5l7vtg|12203775, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rxcz09k2sbbgv5l7vtg|12203775, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/lzx2005?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-10-28 14:47:20  [ main:1031 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2016-10-28 14:47:20  [ main:1031 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2016-10-28 14:47:20  [ main:1031 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 0, unused: 0, excluded: 0]
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1193 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1193 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1193 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1194 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 1, unused: 1, excluded: 0]
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1194 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1194 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1194 ] - [ DEBUG ]  decremented pending_acquires: 9
+2016-10-28 14:47:20  [ main:1194 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1194 ] - [ DEBUG ]  decremented pending_acquires: 8
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1194 ] - [ DEBUG ]  decremented pending_acquires: 7
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1200 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1200 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1200 ] - [ DEBUG ]  decremented pending_acquires: 6
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1200 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1201 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1201 ] - [ DEBUG ]  decremented pending_acquires: 5
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1206 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1206 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1206 ] - [ DEBUG ]  decremented pending_acquires: 4
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1212 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1212 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1212 ] - [ DEBUG ]  decremented pending_acquires: 3
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1216 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1216 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1216 ] - [ DEBUG ]  decremented pending_acquires: 2
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1218 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1218 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1218 ] - [ DEBUG ]  decremented pending_acquires: 1
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1220 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e9e0fb3.acquireResource() returning. 
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1220 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1220 ] - [ DEBUG ]  decremented pending_acquires: 0
+2016-10-28 14:47:20  [ main:1259 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@17d83571 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@169f0dd4)
+2016-10-28 14:47:20  [ main:1259 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewProxyConnection@402461c: close() called more than once.

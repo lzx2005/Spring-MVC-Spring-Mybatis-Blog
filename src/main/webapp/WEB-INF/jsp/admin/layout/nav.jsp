@@ -8,14 +8,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<%=basePath%>admin">后台文章发布系统</a>
+            <a class="navbar-brand" href="<%=basePath%>admin">这是一个后台</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://v3.bootcss.com/examples/dashboard/#">Dashboard</a></li>
-                <li><a href="http://v3.bootcss.com/examples/dashboard/#">Settings</a></li>
-                <li><a href="http://v3.bootcss.com/examples/dashboard/#">Profile</a></li>
-                <li><a href="http://v3.bootcss.com/examples/dashboard/#">Help</a></li>
+                <li><a href="<%=basePath%>">首页</a></li>
             </ul>
             <form class="navbar-form navbar-right">
                 <input type="text" class="form-control" placeholder="Search...">
