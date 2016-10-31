@@ -47,7 +47,7 @@
                         <h2>${item.title }</h2>
                         <div class="font1">
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${item.author }
-                            <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> ${item.createTime}</span>
+                            <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <fmt:formatDate value="${item.createTime}" pattern="yyyy-MM-dd hh:MM:ss"/> </span>
                         </div>
                         <p></p>
                         <p>

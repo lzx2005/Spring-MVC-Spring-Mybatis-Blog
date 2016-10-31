@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abb12a86-865e-49de-8196-3d52479cca9f" name="Default" comment="修复首页BUG">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lzx2005_log.log.2016-10-28" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/interceptor/CommonInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/tool/StrTool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/nav.jsp" />
+    <list default="true" id="abb12a86-865e-49de-8196-3d52479cca9f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lzx2005_log.log" afterPath="$PROJECT_DIR$/lzx2005_log.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/dao/BlogDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/dao/elasticsearch/impl/BlogDaoEsImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/dao/elasticsearch/impl/BlogDaoEsImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Blog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/BlogService.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/BlogService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/service/impl/BlogServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lzx2005/web/restfull/AdminRestfulController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/web/restfull/AdminRestfulController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/blogDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/blogDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/init.sql" afterPath="$PROJECT_DIR$/src/main/sql/init.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/common/add_with_markdown_source.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/common/add_with_markdown_source.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/layout/nav.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/layout/nav.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/blog.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/blog.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/footer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/custom.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/BlogDaoTest.java" afterPath="$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/BlogDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/junit/com/lzx2005/service/BlogServiceTest.java" afterPath="$PROJECT_DIR$/src/test/junit/com/lzx2005/service/BlogServiceTest.java" />
     </list>
     <ignored path="lzx2005.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,8 +59,18 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="88">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tag.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/tag.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -119,18 +109,8 @@
       <file leaf-file-name="nav.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/nav.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="228">
               <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -170,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/entity/Image.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/imageDao.xml" />
         <option value="$PROJECT_DIR$/src/test/junit/com/lzx2005/dao/ImageDaoTest.java" />
@@ -215,12 +194,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/web/restfull/AdminRestfulController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/common/add_with_markdown_source.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/footer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/blog.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/custom.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/layout/nav.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/interceptor/CommonInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/nav.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/tag.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/index.jsp" />
       </list>
     </option>
   </component>
@@ -1567,7 +1547,7 @@
       <workItem from="1477534653710" duration="1223000" />
       <workItem from="1477562381455" duration="638000" />
       <workItem from="1477614711873" duration="18500000" />
-      <workItem from="1477874699903" duration="3617000" />
+      <workItem from="1477874699903" duration="4042000" />
     </task>
     <task id="LOCAL-00001" summary="编写SQL代码，设定Mybatis属性">
       <created>1466318435156</created>
@@ -1786,7 +1766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477637778831</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="更新大量内容">
+      <created>1477878357120</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1477878357120</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1822,7 +1809,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118168000" />
+    <option name="totallyTimeSpent" value="118593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1881,7 +1868,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成DAO层的编写，对UserDao进行了Junit测试" />
     <MESSAGE value="修改数据库代码" />
     <MESSAGE value="编写BlogDao测试类，修复部分BUG" />
     <MESSAGE value="开始编写Service层代码" />
@@ -1906,7 +1892,8 @@
     <MESSAGE value="加入Markdown解析器，并设置代码高亮" />
     <MESSAGE value="完善markdown 显示，修复登录bug" />
     <MESSAGE value="修复首页BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复首页BUG" />
+    <MESSAGE value="更新大量内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新大量内容" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2241,14 +2228,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/tag.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lzx2005/interceptor/LoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -2321,17 +2300,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/tag.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="88">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layout/nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="228">
           <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
           <folding />
         </state>
