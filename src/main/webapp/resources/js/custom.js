@@ -65,11 +65,11 @@ var loginScript = {
         function (data) {
             if(data['success']){
                 console.log("登陆成功");
+                window.location.reload();
             }else{
                 console.log("登陆失败");
+                alert(data['msg']);
             }
-            console.log(data);
-            window.location.reload();
         });
     }
 }

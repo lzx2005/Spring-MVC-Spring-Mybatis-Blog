@@ -49,9 +49,9 @@
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${item.author }
                             <span class="pull-right"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <fmt:formatDate value="${item.createTime}" pattern="yyyy-MM-dd hh:MM:ss"/> </span>
                         </div>
-                        <p></p>
+                        <p>${item.description }</p>
                         <p>
-                            <a class="btn btn-default" href="<%=basePath%>/blog/${item.blogId}/overview" role="button">View details »</a>
+                            <a class="btn btn-default" href="<%=basePath%>blog/${item.blogId}/overview" role="button">View details »</a>
                             <%--<a class="btn btn-primary" href="#" role="button">See More</a>
                             <a class="btn btn-danger" href="#" role="button">Delete</a>--%>
                         </p>
