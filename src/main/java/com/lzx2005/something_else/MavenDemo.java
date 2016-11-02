@@ -1,4 +1,4 @@
-package com.lzx2005.tool;
+package com.lzx2005.something_else;
 
 /**
  * Created by JohnPC on 2016/9/9.

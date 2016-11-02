@@ -46,4 +46,14 @@ public class BlogDaoTest {
         }
     }
 
+    @Test
+    public void countDao() {
+        long count = blogDao.countBlog();
+        System.out.println(count);
+        int pageSize = 4;
+        int totalPage = (int) (count/pageSize);
+        int mod = (int) (count%pageSize);
+        System.out.println(totalPage+","+mod);
+    }
+
 }

@@ -1,6 +1,7 @@
 package com.lzx2005.service.impl;
 
 import com.lzx2005.dao.BlogDao;
+import com.lzx2005.dao.Db;
 import com.lzx2005.dto.PageResult;
 import com.lzx2005.dto.ServiceResult;
 import com.lzx2005.entity.Blog;
@@ -37,9 +38,18 @@ public class BlogServiceImpl implements BlogService {
     }
 
     public ServiceResult<PageResult<Blog>> getAllBlog(int page, int pageSize) {
+        //计算共多少条Blog
+        long countBlog = blogDao.countBlog();
+
+        //计算一共多少页
+        int totalPage = (int) (countBlog/pageSize);
+        System.out.println(totalPage);
+
         PageResult<Blog> pageResult = new PageResult<Blog>();
         pageResult.setCurPage(page);
         pageResult.setPageSize(pageSize);
+        pageResult.setTotalRow(countBlog);
+        pageResult.setTotalPage(totalPage);
         int offset = (page - 1) * pageSize;
         int limit = pageSize;
         ArrayList<Blog> blogs = blogDao.findAll(offset, limit);

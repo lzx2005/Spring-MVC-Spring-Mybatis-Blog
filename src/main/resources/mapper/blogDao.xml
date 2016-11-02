@@ -21,4 +21,8 @@
         ORDER BY create_time DESC
         LIMIT #{offset},#{limit}
     </select>
+
+    <select id="countBlog" resultType="long">
+        select count(*) as countBlog from blog;
+    </select>
 </mapper>
