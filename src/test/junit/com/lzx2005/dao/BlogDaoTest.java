@@ -56,4 +56,10 @@ public class BlogDaoTest {
         System.out.println(totalPage+","+mod);
     }
 
+    @Test
+    public void deleteBlog(){
+        long blogId = 10000L;
+        int i = blogDao.deleteBlog(blogId);
+        System.out.println(i);
+    }
 }

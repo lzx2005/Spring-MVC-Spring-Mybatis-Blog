@@ -1,11 +1,16 @@
 package com.lzx2005.entity;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.Date;
 
 /**
  * Created by Administrator on 2016/6/19.
  */
+
 public class Blog {
+
+    @Id
     private long blogId;
     private String title;
     private String content;

@@ -6,3 +6,4 @@
 <link href="<%=basePath %>resources/admin/css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom styles for this template -->
 <link href="<%=basePath %>resources/admin/css/dashboard.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">

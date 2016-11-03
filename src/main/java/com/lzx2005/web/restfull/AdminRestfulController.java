@@ -11,11 +11,7 @@ import com.lzx2005.tool.Log;
 import com.lzx2005.tool.StrTool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
@@ -160,6 +156,27 @@ public class AdminRestfulController {
             return new AjaxResult<Blog>(true,"文章发布成功",result.getData());
         }else{
             return new AjaxResult<Blog>(false,result.getErrorMsg(),null);
+        }
+    }
+
+    @RequestMapping(
+            value = "blog/delete",
+            method = RequestMethod.POST,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public AjaxResult<Blog> deleteBlog(@RequestParam("blogId")long blogId){
+        ServiceResult<Blog> result = blogService.getBlog(blogId);
+        if(result.isSuccess() && result.getData()!=null){
+            //找到blog
+            Blog blog = result.getData();
+            ServiceResult<Blog> result1 = blogService.deleteBlog(blogId);
+            if(result1.isSuccess()){
+                return new AjaxResult<Blog>(true,"文章已经被成功删除",result.getData());
+            }else{
+                return new AjaxResult<Blog>(false,"文章删除失败",null);
+            }
+        }else{
+            return new AjaxResult<Blog>(false,"删除失败，找不到该文章",null);
         }
     }
 }

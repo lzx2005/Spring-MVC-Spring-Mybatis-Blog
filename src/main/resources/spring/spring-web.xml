@@ -30,6 +30,10 @@
             <mvc:mapping path="/admin"/>
             <bean id="LoginInterceptor" class="com.lzx2005.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/admin_restful/**"/>
+            <bean id="AdminRestfulInterceptor" class="com.lzx2005.interceptor.AdminRestfulInterceptor"/>
+        </mvc:interceptor>
     </mvc:interceptors>
 
 

@@ -53,18 +53,15 @@
                                     <c:otherwise>否</c:otherwise>
                                 </c:choose>
                             </td>
-                            <td><button class="btn btn-primary">编辑</button>&nbsp;<button class="btn btn-danger">删除</button></td>
+                            <td><button class="btn btn-primary">编辑</button>&nbsp;<button class="btn btn-danger" onclick="blogScript.doDelete(${item.blogId })">删除</button></td>
                         </tr>
                     </c:forEach>
                     </tbody>
                 </table>
 
 
-                ${blogs.data.curPage }
-                ${blogs.data.pageSize }
-                ${blogs.data.totalPage }
-                ${blogs.data.totalRow }
             </div>
+            <%@include file="../../layout/page.jsp"%>
         </div>
     </div>
 </div>

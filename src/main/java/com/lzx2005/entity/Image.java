@@ -1,11 +1,15 @@
 package com.lzx2005.entity;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.Date;
 
 /**
  * Created by Administrator on 2016/9/2.
  */
 public class Image {
+
+    @Id
     private long imageId;
     private String name;
     private long size;

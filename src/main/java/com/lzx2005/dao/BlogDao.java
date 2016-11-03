@@ -19,4 +19,6 @@ public interface BlogDao {
     public ArrayList<Blog> findAll(@Param("offset") int offset, @Param("limit") int limit);
 
     public long countBlog();
+
+    public int deleteBlog(@Param("blogId")long blogId);
 }

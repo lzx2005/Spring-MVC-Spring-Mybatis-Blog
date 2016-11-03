@@ -18,4 +18,6 @@ public interface BlogService {
     public ServiceResult<PageResult<Blog>> getAllBlog(int page, int pageSize);
 
     public ServiceResult<Blog> getBlog(long blogId);
+
+    public ServiceResult<Blog> deleteBlog(long blogId);
 }

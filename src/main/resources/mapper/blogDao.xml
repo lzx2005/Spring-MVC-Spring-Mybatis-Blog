@@ -25,4 +25,8 @@
     <select id="countBlog" resultType="long">
         select count(*) as countBlog from blog;
     </select>
+
+    <update id="deleteBlog">
+        DELETE FROM `blog` WHERE blog_id = #{blogId};
+    </update>
 </mapper>

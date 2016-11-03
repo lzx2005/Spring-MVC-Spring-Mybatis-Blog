@@ -50,4 +50,11 @@ public class BlogServiceTest {
         System.out.println(result);
     }
 
+    @Test
+    public void deleteBlog(){
+        long blogId = 10001L;
+        ServiceResult<Blog> result = blogService.deleteBlog(blogId);
+        System.out.println(result);
+    }
+
 }

@@ -1,16 +1,15 @@
 package com.lzx2005.service.impl;
 
 import com.lzx2005.dao.BlogDao;
-import com.lzx2005.dao.Db;
 import com.lzx2005.dto.PageResult;
 import com.lzx2005.dto.ServiceResult;
 import com.lzx2005.entity.Blog;
 import com.lzx2005.service.BlogService;
+import com.lzx2005.tool.PageTool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Administrator on 2016/6/20.
@@ -42,7 +41,9 @@ public class BlogServiceImpl implements BlogService {
         long countBlog = blogDao.countBlog();
 
         //计算一共多少页
-        int totalPage = (int) (countBlog/pageSize);
+
+
+        int totalPage = new PageTool().getPage(countBlog,pageSize);
         System.out.println(totalPage);
 
         PageResult<Blog> pageResult = new PageResult<Blog>();
@@ -67,5 +68,16 @@ public class BlogServiceImpl implements BlogService {
             sr = new ServiceResult<Blog>(true, blog);
         }
         return sr;
+    }
+
+    public ServiceResult<Blog> deleteBlog(long blogId) {
+
+        int deleteCount = blogDao.deleteBlog(blogId);
+        if(deleteCount==1){
+            //删除成功
+            return new ServiceResult<Blog>(true,"删除成功");
+        }else{
+            return new ServiceResult<Blog>(false,"删除失败");
+        }
     }
 }

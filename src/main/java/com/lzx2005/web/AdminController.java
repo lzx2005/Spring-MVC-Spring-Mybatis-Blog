@@ -6,6 +6,7 @@ import com.lzx2005.dto.ServiceResult;
 import com.lzx2005.entity.Blog;
 import com.lzx2005.entity.User;
 import com.lzx2005.service.BlogService;
+import com.lzx2005.setting.Var;
 import com.lzx2005.tool.StrTool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -45,7 +46,7 @@ public class AdminController {
         if(StrTool.isNotNull(page)){
             pageint = Integer.parseInt(page);
         }
-        ServiceResult<PageResult<Blog>> allBlog = blogService.getAllBlog(pageint, 20);
+        ServiceResult<PageResult<Blog>> allBlog = blogService.getAllBlog(pageint, Var.DEFAULT_PAGE_SIZE);
         model.addAttribute("blogs",allBlog);
         return "admin/common/blog";
     }
