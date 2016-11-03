@@ -135,6 +135,12 @@ public class AdminRestfulController {
     }
 
 
+    /**
+     * 创建文章
+     * @param res
+     * @param response
+     * @return
+     */
     @RequestMapping(
             value = "blog/create",
             method = RequestMethod.POST,
@@ -159,6 +165,11 @@ public class AdminRestfulController {
         }
     }
 
+    /**
+     * 删除文章
+     * @param blogId    文章Id
+     * @return
+     */
     @RequestMapping(
             value = "blog/delete",
             method = RequestMethod.POST,

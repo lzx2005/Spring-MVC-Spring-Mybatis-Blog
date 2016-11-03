@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Created by Raven on 2016/7/23.
- * 登陆拦截器
+ * 管理员接口拦截器
  */
 public class AdminRestfulInterceptor implements HandlerInterceptor {
 

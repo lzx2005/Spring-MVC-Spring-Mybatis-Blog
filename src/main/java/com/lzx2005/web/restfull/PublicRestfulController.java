@@ -25,7 +25,7 @@ import java.util.Iterator;
 
 /**
  * Created by Restfull on 2016/6/29.
- * 编写Restful接口
+ * 公共接口
  */
 @Controller
 @RequestMapping("/public")
