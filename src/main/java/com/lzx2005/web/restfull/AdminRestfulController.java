@@ -165,6 +165,46 @@ public class AdminRestfulController {
         }
     }
 
+
+
+    @RequestMapping(
+            value = "blog/edit",
+            method = RequestMethod.POST,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public AjaxResult<Blog> editBlog(HttpServletRequest res, HttpServletResponse response){
+        String title = res.getParameter("title");
+        String content = res.getParameter("content");
+        String desc = res.getParameter("desc");
+        Long blog_id = Long.parseLong(res.getParameter("blog_id"));
+
+        if(!StrTool.allIsNotNull(title,content,desc)){
+            return new AjaxResult<Blog>(false,"缺少参数",null);
+        }
+
+        if(blog_id==null){
+            return new AjaxResult<Blog>(false,"缺少参数",null);
+        }
+
+        ServiceResult<Blog> result = blogService.getBlog(blog_id);
+
+        if(result.isSuccess()){
+            //找到Blog
+            Blog blog = result.getData();
+            blog.setTitle(title);
+            User user = (User)res.getSession().getAttribute("user");
+            String author = user.getUsername();
+            blog.setAuthor(author);
+            blogService.editBlog(blog);
+
+
+            return new AjaxResult<Blog>(true,"文章发布成功",result.getData());
+        }else{
+            return new AjaxResult<Blog>(false,result.getErrorMsg(),null);
+        }
+    }
+
+
     /**
      * 删除文章
      * @param blogId    文章Id

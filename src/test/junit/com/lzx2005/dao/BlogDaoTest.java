@@ -62,4 +62,13 @@ public class BlogDaoTest {
         int i = blogDao.deleteBlog(blogId);
         System.out.println(i);
     }
+
+    @Test
+    public void updateBlog(){
+        Blog blog = blogDao.queryById(10005);
+        System.out.println(blog);
+        blog.setAuthor("admin");
+        int i = blogDao.updateBlog(blog);
+        System.out.println(i);
+    }
 }

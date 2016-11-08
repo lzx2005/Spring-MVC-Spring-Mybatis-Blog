@@ -20,4 +20,6 @@ public interface BlogService {
     public ServiceResult<Blog> getBlog(long blogId);
 
     public ServiceResult<Blog> deleteBlog(long blogId);
+
+    public ServiceResult<Blog> editBlog(Blog blog);
 }

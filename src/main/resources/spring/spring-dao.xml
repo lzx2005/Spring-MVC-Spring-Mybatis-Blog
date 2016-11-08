@@ -1,11 +1,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:beans="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <!-- 配置数据库相关参数 -->
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
+<!--    <beans:property name="timeBetweenEvictionRunsMillis" value="120" />
+    <beans:property name="testWhileIdle" value="true" />
+    <beans:property name="validationQuery" value="select 1 from user" />-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${driver}"/>
         <property name="jdbcUrl" value="${url}"/>
@@ -20,6 +24,7 @@
         <property name="checkoutTimeout" value="5000"/>
         <!-- 连接失败尝试次数-->
         <property name="acquireRetryAttempts" value="5"/>
+
     </bean>
     
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -42,5 +47,4 @@
         <!-- 给出需要扫描的DAO接口包 -->
         <property name="basePackage" value="com.lzx2005.dao"/>
     </bean>
-
 </beans>

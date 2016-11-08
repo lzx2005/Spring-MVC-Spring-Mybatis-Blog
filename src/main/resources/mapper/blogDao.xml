@@ -29,4 +29,15 @@
     <update id="deleteBlog">
         DELETE FROM `blog` WHERE blog_id = #{blogId};
     </update>
+
+    <update id="updateBlog" parameterType="Blog">
+        UPDATE `blog`
+        SET
+            title=#{title},
+            author=#{author},
+            description=#{description},
+            content=#{content},
+            blog_type=#{blogType}
+        WHERE blog_id = #{blogId};
+    </update>
 </mapper>

@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -51,6 +52,16 @@ public class AdminController {
         return "admin/common/blog";
     }
 
+    @RequestMapping("/admin/blog_edit")
+    public String edit(@RequestParam("blog_id") long blogId, HttpServletRequest res, Model model){
+        ServiceResult<Blog> blog = blogService.getBlog(blogId);
+        if(blog!=null){
+            model.addAttribute("blog",blog);
+            return "admin/common/edit";
+        }else{
+            return "redirect:/admin/blog_add_markdown";
+        }
+    }
 
 
     @RequestMapping("/admin/blog_add")

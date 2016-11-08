@@ -80,4 +80,18 @@ public class BlogServiceImpl implements BlogService {
             return new ServiceResult<Blog>(false,"删除失败");
         }
     }
+
+    public ServiceResult<Blog> editBlog(Blog blog) {
+        if(blog!=null){
+            int i = blogDao.updateBlog(blog);
+            if(i==1){
+                return new ServiceResult<Blog>(true,blog);
+            }else{
+
+                return new ServiceResult<Blog>(false,"保存失败");
+            }
+        }else{
+            return new ServiceResult<Blog>(false,"传入参数为空");
+        }
+    }
 }

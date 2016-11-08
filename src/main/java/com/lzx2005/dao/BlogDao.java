@@ -21,4 +21,6 @@ public interface BlogDao {
     public long countBlog();
 
     public int deleteBlog(@Param("blogId")long blogId);
+
+    public int updateBlog(Blog blog);
 }
