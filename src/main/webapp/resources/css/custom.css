@@ -35,6 +35,11 @@ input{
     background-color: white;
 }
 
+.blog-block-page{
+    padding: 0px 10px;
+    margin: 0 10px 10px 10px;
+}
+
 .my-info{
     background-color: white;
     padding: 0px 10px 10px 10px;

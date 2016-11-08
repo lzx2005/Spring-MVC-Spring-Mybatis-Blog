@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Welcome~</title>
+    <title>Raven的笔记本</title>
     <base href="<%=basePath %>"/>
     <%@include file="../layout/css.jsp" %>
     <%@include file="../layout/script.jsp" %>
@@ -27,10 +27,9 @@
 
 <div class="jumbotron jumb-block">
     <div class="container">
-        <h1>Hello, world!</h1>
-        <p>${blogs }</p>
-        <p><a class="btn btn-primary btn-lg" href="http://v3.bootcss.com/examples/jumbotron/#" role="button">Learn more
-            »</a></p>
+        <h1>Hello!</h1>
+        <p>三年Java Web在校外包经验，使用过Spring，Spring MVC，Mybatis，Jfinal等开源框架，使用过ActiveMQ消息队列、Ehcache缓存框架，可以设计Restful接口等，前端方面使用过Bootstrap等。</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">简历 »</a></p>
     </div>
 </div>
 
@@ -57,6 +56,9 @@
                         </p>
                     </div>
                 </c:forEach>
+                <div class="col-md-12 blog-block-page">
+                    <%@include file="../layout/page.jsp"%>
+                </div>
             </div>
 
 
@@ -67,11 +69,11 @@
                     <img class="my-avatar" src="<%=basePath%>resources/image/avatar.png">
                 </div>
                 <div>
-                    <p>姓名:lzx2005</p>
-                    <p>年龄:16</p>
-                    <p>姓名:lzx2005</p>
-                    <p>姓名:lzx2005</p>
-                    <p>姓名:lzx2005</p>
+                    <p>姓名:Raven</p>
+                    <p>年龄:23</p>
+                    <p>性别:男</p>
+                    <p>邮箱:<a href="mailto:crow2005@vip.qq.com">crow2005@vip.qq.com</a></p>
+                    <p>微博:<a href="http://weibo.com/u/2557929062">lzx2005</a></p>
 
                 </div>
             </div>

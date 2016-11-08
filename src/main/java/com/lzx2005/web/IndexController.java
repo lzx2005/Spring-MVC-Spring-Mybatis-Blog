@@ -7,7 +7,9 @@ import com.lzx2005.entity.Blog;
 import com.lzx2005.entity.User;
 import com.lzx2005.service.BlogService;
 import com.lzx2005.service.UserService;
+import com.lzx2005.setting.Var;
 import com.lzx2005.tool.Log;
+import com.lzx2005.tool.StrTool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -36,9 +38,14 @@ public class IndexController {
      * @return String
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(Model model){
-        ServiceResult<PageResult<Blog>> blogs = blogService.getAllBlog(1, 10);
-        model.addAttribute("blogs",blogs);
+    public String index(HttpServletRequest res,Model model){
+        String page = res.getParameter("page");
+        int pageint = 1;
+        if(StrTool.isNotNull(page)){
+            pageint = Integer.parseInt(page);
+        }
+        ServiceResult<PageResult<Blog>> allBlog = blogService.getAllBlog(pageint, Var.DEFAULT_PAGE_SIZE);
+        model.addAttribute("blogs",allBlog);
         return "common/index";
     }
 

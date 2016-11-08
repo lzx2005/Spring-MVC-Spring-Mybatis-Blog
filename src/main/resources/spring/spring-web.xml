@@ -34,6 +34,12 @@
             <mvc:mapping path="/admin_restful/**"/>
             <bean id="AdminRestfulInterceptor" class="com.lzx2005.interceptor.AdminRestfulInterceptor"/>
         </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/*"/>
+            <mvc:mapping path="/*/*"/>
+            <mvc:mapping path="/*/*/*"/>
+            <bean id="CommonInterceptor" class="com.lzx2005.interceptor.CommonInterceptor"/>
+        </mvc:interceptor>
     </mvc:interceptors>
 
 

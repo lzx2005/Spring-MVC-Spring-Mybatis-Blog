@@ -17,6 +17,10 @@ public class CommonInterceptor implements HandlerInterceptor {
         String path = httpServletRequest.getContextPath();
         String baseUrl  = httpServletRequest.getScheme() + "://" + httpServletRequest.getServerName() + ":" + httpServletRequest.getServerPort() + path + "/";
         httpServletRequest.setAttribute("baseUrl",baseUrl);
+        String requestURI = httpServletRequest.getRequestURI();
+        String substring = requestURI.substring(1);
+        System.out.println("substring="+substring);
+        httpServletRequest.setAttribute("pageActionName",substring);
         return true;
     }
 

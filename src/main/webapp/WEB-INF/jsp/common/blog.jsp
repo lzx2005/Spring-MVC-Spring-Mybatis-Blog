@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>${blog.title }</title>
+    <title>${blog.title } - Raven的笔记本</title>
     <base href="<%=basePath %>"/>
     <%@include file="../layout/css.jsp" %>
     <%@include file="../layout/script.jsp" %>
