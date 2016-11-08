@@ -23,7 +23,7 @@
     </select>
 
     <select id="countBlog" resultType="long">
-        select count(*) as countBlog from blog;
+        select count(1) from blog;
     </select>
 
     <update id="deleteBlog">

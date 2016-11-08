@@ -53,7 +53,7 @@
                                     <c:otherwise>否</c:otherwise>
                                 </c:choose>
                             </td>
-                            <td><button class="btn btn-primary">编辑</button>&nbsp;<button class="btn btn-danger" onclick="blogScript.doDelete(${item.blogId })">删除</button></td>
+                            <td><a href="<%=basePath%>admin/blog_edit?blog_id=${item.blogId }" class="btn btn-primary">编辑</a>&nbsp;<button class="btn btn-danger" onclick="blogScript.doDelete(${item.blogId })">删除</button></td>
                         </tr>
                     </c:forEach>
                     </tbody>

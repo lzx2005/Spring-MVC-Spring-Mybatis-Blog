@@ -24,7 +24,6 @@
         <property name="checkoutTimeout" value="5000"/>
         <!-- 连接失败尝试次数-->
         <property name="acquireRetryAttempts" value="5"/>
-
     </bean>
     
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">

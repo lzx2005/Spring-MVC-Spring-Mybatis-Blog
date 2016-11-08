@@ -191,14 +191,18 @@ public class AdminRestfulController {
         if(result.isSuccess()){
             //找到Blog
             Blog blog = result.getData();
-            blog.setTitle(title);
             User user = (User)res.getSession().getAttribute("user");
             String author = user.getUsername();
+            blog.setTitle(title);
             blog.setAuthor(author);
-            blogService.editBlog(blog);
-
-
-            return new AjaxResult<Blog>(true,"文章发布成功",result.getData());
+            blog.setContent(content);
+            blog.setDescription(desc);
+            ServiceResult<Blog> blogServiceResult = blogService.editBlog(blog);
+            if(blogServiceResult.isSuccess()){
+                return new AjaxResult<Blog>(true,"文章修改成功",result.getData());
+            }else{
+                return new AjaxResult<Blog>(false,blogServiceResult.getErrorMsg(),null);
+            }
         }else{
             return new AjaxResult<Blog>(false,result.getErrorMsg(),null);
         }
